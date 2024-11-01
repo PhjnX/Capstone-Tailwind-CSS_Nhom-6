@@ -45,7 +45,10 @@
 
   <body class="font-nunito">
     <!-- Header -->
-    <header>
+    <header
+      id="header-content"
+      class="inline-block w-full transition-all duration-300 z-50 pb-64"
+    >
       <div id="header-content">
         <!-- Hero Header Section -->
         <div id="hero__header" class="bg-[#ED145B]">
@@ -328,7 +331,7 @@
             <span class="font-bold">Elementary</span>
             <span class="font-bold text-[#ED145B]">School</span>
           </h1>
-          <div class="flex absolute right-[87px] top-14 animate-skw">
+          <div class="flex absolute right-[87px] top-14 wow animate-skw">
             <img
               src="../img/shap.png"
               alt="shape-2"
@@ -353,7 +356,7 @@
 
         <!-- Left Image with Circle Border -->
         <div
-          class="absolute left-[8.625rem] lg:top-0 top-10 lg:max-w-full max-w-[200px] sm:block hidden animate-up-down"
+          class="absolute left-[8.625rem] lg:top-0 top-10 lg:max-w-full max-w-[200px] sm:block hidden wow animate-up-down"
         >
           <img src="../img/boy_img_1.png" alt="Boy Image 1" />
           <span
@@ -363,7 +366,7 @@
 
         <!-- Right Image with Circle Border -->
         <div
-          class="absolute right-[110px] bottom-0 pb-[71px] lg:block hidden animate-up-down"
+          class="absolute right-[110px] bottom-0 pb-[71px] lg:block hidden wow animate-up-down"
         >
           <img src="../img/boy_img_2.png" alt="Boy Image 2" />
           <span
@@ -378,13 +381,15 @@
 
         <!-- Decorative Elements for Large Screens -->
         <div class="lg:block hidden">
-          <div class="absolute left-0 top-[60px] animate-left-right-2">
+          <div class="absolute left-0 top-[60px] wow animate-left-right-2">
             <img src="../img/left-circle-1.png" alt="Left Circle 1" />
           </div>
-          <div class="absolute left-[37px] top-[186px] animate-left-right-2">
+          <div
+            class="absolute left-[37px] top-[186px] wow animate-left-right-2"
+          >
             <img src="../img/left-circle-2.png" alt="Left Circle 2" />
           </div>
-          <div class="absolute right-0 bottom-[165px] animate-up-down">
+          <div class="absolute right-0 bottom-[165px] wow animate-up-down">
             <img src="../img/right-circle.png" alt="Right Circle" />
           </div>
         </div>
@@ -400,13 +405,17 @@
         <!-- Left Section -->
         <div class="xl:w-1/2 w-full">
           <div class="xl:inline-block hidden">
-            <p class="font-bubblegum text-orange-500 text-[19px] animate-fade-in-up">
+            <p
+              class="font-bubblegum text-orange-500 text-[19px] wow animate-fade-in-up"
+            >
               Number Talks
             </p>
-            <p class="font-bold font-jost text-[32px] leading-[130%] pb-5 animate-fade-in-up">
+            <p
+              class="font-bold font-jost text-[32px] leading-[130%] pb-5 wow animate-fade-in-up"
+            >
               Invest in education invest <br />in the future
             </p>
-            <p class="text-[#686868] animate-fade-in-up">
+            <p class="text-[#686868] wow animate-fade-in-up">
               Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
               dictum facilisis <br />
               sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum
@@ -414,7 +423,7 @@
               dolor sit amet consectetur. Amet lectus mi ultricies dictum
             </p>
           </div>
-          
+
           <button
             class="mt-7 relative flex gap-2.5 items-center bg-white py-[18px] px-[25px] rounded-lg border overflow-hidden group text-black hover:text-white transition-all duration-700"
           >
@@ -431,7 +440,7 @@
         >
           <!-- Card Items -->
           <div
-            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px] animate-fade-in-up"
+            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px] wow animate-fade-in-up"
           >
             <div
               class="bg-[#F7941E] rounded-full w-20 h-20 text-center leading-[90px]"
@@ -445,7 +454,7 @@
           </div>
 
           <div
-            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px] animate-fade-in-up"
+            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px] wow animate-fade-in-up"
           >
             <div
               class="bg-[#ED145B] rounded-full w-20 h-20 text-center leading-[95px]"
@@ -533,8 +542,14 @@
 
         <!-- About Us Right -->
         <div class="w-1/2 xl:pl-24 pl-0">
-          <p class="font-bubblegum text-[#1CBBB4] text-[19px] animate-fade-in-up">About us</p>
-          <p class="font-bold font-jost text-[32px] leading-[130%] pb-5 animate-fade-in-up">
+          <p
+            class="font-bubblegum text-[#1CBBB4] text-[19px] animate-fade-in-up"
+          >
+            About us
+          </p>
+          <p
+            class="font-bold font-jost text-[32px] leading-[130%] pb-5 animate-fade-in-up"
+          >
             Unlocking Potential, One <br />
             Child at a Time in school
           </p>
@@ -572,10 +587,14 @@
         class="container mx-auto max-w-[1288px] md:w-full w-[90%] relative z-10"
       >
         <div class="text-center">
-          <p class="font-bubblegum text-[#73BE48] text-[19px] animate-fade-in-up">
+          <p
+            class="font-bubblegum text-[#73BE48] text-[19px] animate-fade-in-up"
+          >
             Educational Programs
           </p>
-          <p class="font-bold text-[32px] font-jost lg:w-1/2 lg:mx-auto w-full animate-fade-in-up">
+          <p
+            class="font-bold text-[32px] font-jost lg:w-1/2 lg:mx-auto w-full animate-fade-in-up"
+          >
             Strong Foundation for Success For Nurturing Curiosity
           </p>
         </div>
@@ -701,10 +720,12 @@
     </section>
 
     <!-- Portforlio -->
-    <section class="lg:pt-15 lg:pb-15 pt-10 pb-10 portfolio"> 
+    <section class="lg:pt-15 lg:pb-15 pt-10 pb-10 portfolio">
       <div class="container mx-auto max-w-[1288px]">
         <div class="text-center flex flex-col items-center">
-          <p class="font-bubblegum text-[19px] text-[#1CBBB4] animate-fade-in-up">
+          <p
+            class="font-bubblegum text-[19px] text-[#1CBBB4] animate-fade-in-up"
+          >
             Latest Portfolio
           </p>
           <p
@@ -1052,7 +1073,7 @@
         </div>
 
         <div class="tab-content mt-16" id="tab-3 animate-fade-in-up">
-          <div class="grid grid-cols-12 gap-7 mt-7 animate-fade-in-Up" >
+          <div class="grid grid-cols-12 gap-7 mt-7 animate-fade-in-Up">
             <div class="col-span-6">
               <div class="relative group">
                 <img
@@ -1358,15 +1379,21 @@
     </section>
 
     <!-- Service -->
-    <section class="pt-20 pb-15 relative lg:bg-transparent z-10">
-      <div class="max-w-[1288px] mx-auto relative z-10 overflow-hidden">
+    <section
+      class="pt-20 pb-15 relative lg:bg-transparent z-10 xl:px-0 lg:px-10 px-0"
+    >
+      <div
+        class="max-w-[1288px] mx-auto lg:py-0 py-20 relative z-10 overflow-hidden"
+      >
         <div
-          class="absolute w-[77%] bg-[#FFF0E5] h-[80%] top-0 z-0 right-0 rounded-xl"
+          class="absolute lg:w-[77%] w-full bg-[#FFF0E5] lg:h-[80%] h-full top-0 z-0 right-0 rounded-xl"
         ></div>
-        <div class="relative z-10">
-          <div class="flex justify-between items-center">
-            <div class="text-start">
-              <p class="font-bubblegum text-[19px] text-[#1CBBB4] animate-fade-in-up">
+        <div class="relative z-10 lg:px-0 px-10">
+          <div class="flex lg:flex-row flex-col justify-between items-center">
+            <div class="text-start w-full">
+              <p
+                class="font-bubblegum text-[19px] text-[#1CBBB4] animate-fade-in-up w-full text-start"
+              >
                 Latest Services
               </p>
               <p class="font-jost text-[32px] font-bold animate-fade-in-up">
@@ -1375,15 +1402,15 @@
               </p>
             </div>
             <div class="pr-9">
-              <p class="text-[#686868] animate-fade-in-up">
+              <p class="text-[#686868] animate-fade-in-up w-full text-start">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit platea
-                pharetra, nostra mattis <br />
-                hendrerit proin mollis pretium facilisi in, ligula volutpat
+                pharetra, nostra mattis hendrerit proin mollis pretium facilisi
+                in, ligula volutpat
               </p>
             </div>
           </div>
         </div>
-        <div class="!flex">
+        <div class="!flex sm:flex-row flex-col lg:px-0 px-10">
           <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
             <div class="relative lg:mt-7.5 mt-5 pt-10">
               <div class="swiper-pagination flex justify-start"></div>
@@ -1567,7 +1594,9 @@
           </div>
         </div>
 
-        <div class="absolute bottom-[-3.25rem] z-0 animate-left-right">
+        <div
+          class="absolute bottom-[-3.25rem] z-0 animate-left-right sm:inline-block hidden"
+        >
           <img src="../img/man.png" alt="" />
         </div>
       </div>
@@ -1587,13 +1616,11 @@
               <div class="lg:max-w-[520px] pb-10">
                 <p
                   class="text-[#1CBBB4] font-bubblegum text-[19px] animate-fade-in-up"
-                  "
                 >
                   Some Faq
                 </p>
                 <h2
                   class="font-bold font-jost lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] animate-fade-in-up"
-                  
                 >
                   Empowering Children Through Education Playful Mind
                 </h2>
@@ -1710,9 +1737,10 @@
       </div>
     </section>
 
+    <script src="./lib/main.js"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const tabButtons = document.querySelectorAll(".tab-button");
@@ -1745,12 +1773,28 @@
       const swiper = new Swiper(".swiper", {
         loop: true,
         slidesPerView: 3,
-        centeredSlides: true,
+        // centeredSlides: true,
 
-        // Pagination
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: false,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            centeredSlides: false,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            centeredSlides: true,
+          },
         },
       });
     </script>
@@ -1774,7 +1818,6 @@
             innerItem.querySelector(".icon .fa-minus").style.display = "none";
             innerItem.querySelector(".icon .fa-plus").style.display = "block";
 
-            // Đặt lại màu nền cho thẻ span
             innerItem.querySelector(".icon").style.backgroundColor = "#F7941E";
           });
 
