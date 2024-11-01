@@ -2,3 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-slide-active .service-card {
+  background-color: white;
+}
+.swiper-slide .service-card .card-footer {
+  transition: all 0.5s;
+}
+.swiper-slide:hover .service-card .card-footer {
+  opacity: 1;
+}
+.service-card .card-footer {
+  opacity: 0;
+}
+.swiper-slide-active .service-card .card-footer {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 35px !important;
+  border-radius: 4px !important;
+  height: 5px !important;
+}
+.swiper-pagination-bullet {
+  width: 15px !important;
+  border-radius: 4px !important;
+  height: 5px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #1cbbb4 !important;
+}
