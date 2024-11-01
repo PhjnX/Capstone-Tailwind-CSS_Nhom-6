@@ -596,6 +596,10 @@ video {
   visibility: hidden;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -720,6 +724,10 @@ video {
   z-index: 10;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
@@ -801,6 +809,10 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .\!flex {
   display: flex !important;
 }
@@ -843,10 +855,6 @@ video {
 
 .h-\[141px\] {
   height: 141px;
-}
-
-.h-\[80\%\] {
-  height: 80%;
 }
 
 .h-full {
@@ -899,10 +907,6 @@ video {
 
 .w-8 {
   width: 2rem;
-}
-
-.w-\[77\%\] {
-  width: 77%;
 }
 
 .w-\[90\%\] {
@@ -983,24 +987,8 @@ video {
   }
 }
 
-.animate-fade-in-Up {
-  animation: fadeInUp 1s ease forwards;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .animate-fade-in-up {
-  animation: fadeInUp 5s ease forwards;
+  animation: fadeInUp 3s ease forwards;
 }
 
 @keyframes left-right {
@@ -1299,6 +1287,11 @@ video {
   padding-right: 2rem !important;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1347,6 +1340,11 @@ video {
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-3 {
@@ -1848,12 +1846,20 @@ video {
     display: block;
   }
 
+  .sm\:inline-block {
+    display: inline-block;
+  }
+
   .sm\:flex {
     display: flex;
   }
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 }
 
@@ -1982,6 +1988,10 @@ video {
     height: 2.5rem;
   }
 
+  .lg\:h-\[80\%\] {
+    height: 80%;
+  }
+
   .lg\:h-full {
     height: 100%;
   }
@@ -2000,6 +2010,10 @@ video {
 
   .lg\:w-\[75\%\] {
     width: 75%;
+  }
+
+  .lg\:w-\[77\%\] {
+    width: 77%;
   }
 
   .lg\:w-full {
@@ -2046,9 +2060,24 @@ video {
     background-color: transparent;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:pt-\[72px\] {
@@ -2102,6 +2131,11 @@ video {
 
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .xl\:pl-24 {

@@ -16,7 +16,7 @@ module.exports = {
       skw: "skew-animation 2s infinite",
       "up-down": "up-down 2s ease-in-out infinite",
       "left-right-2": "left-right-2 4s ease-in-out infinite",
-      "fade-in-up": "fadeInUp 5s ease forwards",
+      "fade-in-up": "fadeInUp 3s ease forwards",
       "left-right": "left-right 3s ease-in-out infinite",
       "fade-in-Up": "fadeInUp 1s ease forwards",
     },
