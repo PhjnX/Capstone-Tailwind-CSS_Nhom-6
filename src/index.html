@@ -38,6 +38,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <link rel="stylesheet" href="/src/css/output.css" />
+    <link rel="stylesheet" href="/src/css/input.css" />
   </head>
 
   <body class="font-nunito">
@@ -50,62 +53,51 @@
             class="max-w-[1288px] mx-auto md:flex lg:flex-row lg:justify-between md:flex-col hidden items-center"
           >
             <!-- left -->
-            <div class="flex py-[13px] gap-8">
+            <div class="flex py-3 gap-8 text-white">
               <!-- item 1  -->
-              <div>
-                <i
-                  class="fa-solid fa-phone text-[16.5px]"
-                  style="color: #ffffff"
-                ></i>
-                <span class="text-white ml-2">(629) 555-0129</span>
+              <div class="flex items-center">
+                <i class="fa-solid fa-phone text-[16.5px]"></i>
+                <span class="ml-2">(629) 555-0129</span>
               </div>
               <!-- item 2 -->
-              <div>
-                <i class="fa-solid fa-envelope" style="color: #fcfcfc"></i>
-                <span class="text-white ml-2">info@example.com</span>
+              <div class="flex items-center">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="ml-2">info@example.com</span>
               </div>
               <!-- item 3 -->
-              <div>
-                <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
-                <span class="text-white ml-2"
-                  >6391 Elgin St. Celina, 10299</span
-                >
+              <div class="flex items-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="ml-2">6391 Elgin St. Celina, 10299</span>
               </div>
             </div>
+
             <!-- right -->
             <div class="flex space-x-2">
               <a
-                class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500"
                 href="#"
-                ><i
-                  class="fa-brands fa-facebook-f text-xs"
-                  style="color: #ffffff"
-                ></i
-              ></a>
+                class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500 text-white"
+              >
+                <i class="fa-brands fa-facebook-f text-xs"></i>
+              </a>
+
               <a
-                class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500"
                 href="#"
-                ><i
-                  class="fa-brands fa-x-twitter text-xs"
-                  style="color: #ffffff"
-                ></i
-              ></a>
+                class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500 text-white"
+              >
+                <i class="fa-brands fa-x-twitter text-xs"></i>
+              </a>
               <a
-                class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500"
                 href="#"
-                ><i
-                  class="fa-brands fa-linkedin text-xs"
-                  style="color: #ffffff"
-                ></i
-              ></a>
+                class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500 text-white"
+              >
+                <i class="fa-brands fa-linkedin text-xs"></i>
+              </a>
               <a
-                class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500"
                 href="#"
-                ><i
-                  class="fa-brands fa-pinterest-p text-xs"
-                  style="color: #ffffff"
-                ></i
-              ></a>
+                class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500 text-white"
+              >
+                <i class="fa-brands fa-pinterest-p text-xs"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -118,183 +110,181 @@
             class="max-w-[1288px] mx-auto flex justify-between items-center py-5 lg:px-3 px-10"
           >
             <div class="flex items-center gap-1">
-              <img src="../img/logo.png" alt="" />
+              <img src="../img/logo.png" alt="Ascent Logo" />
               <span class="text-3xl font-bold">Ascent</span>
             </div>
+
             <div class="flex items-center gap-16">
-              <nav class="lg:flex lg:gap-16 hidden">
-                <ul class="flex items-center gap-[25px]">
+              <nav class="hidden lg:flex lg:gap-16">
+                <ul class="flex items-center gap-6">
                   <!-- Home -->
-                  <li class="leading-[164%] relative py-5 group">
+                  <li class="relative py-5 group">
                     <a
                       href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-[#F7941E] transition-all duration-500 py-5"
+                      class="font-semibold text-lg font-jost transition-all duration-500 group-hover:text-[#F7941E]"
                       >Home
-                      <span class=""
-                        ><i
-                          class="fa-solid fa-angle-down text-sm"
-                          aria-hidden="true"
-                        ></i></span
-                    ></a>
-
+                      <span
+                        ><i class="fa-solid fa-angle-down text-sm"></i
+                      ></span>
+                    </a>
                     <ul
-                      class="absolute top-full z-10 shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 bg-white"
+                      class="absolute top-full z-10 shadow-sm min-w-56 bg-white transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
                     >
                       <li>
                         <a
                           href="index.html"
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
+                          class="block py-3 px-2.5 border-b border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Home-1</a
                         >
                       </li>
                       <li>
                         <a
                           href="#"
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
+                          class="block py-3 px-2.5 border-b border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Home-2</a
                         >
                       </li>
                     </ul>
                   </li>
+
                   <!-- About Us -->
-                  <li class="leading-[164%] relative py-5 group">
+                  <li class="relative py-5 group">
                     <a
                       href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-[#F7941E] transition-all duration-500 py-5"
+                      class="font-semibold text-lg font-jost transition-all duration-500 group-hover:text-[#F7941E]"
                       >About Us</a
                     >
                   </li>
+
                   <!-- Services -->
-                  <li class="leading-[164%] relative py-5 group">
+                  <li class="relative py-5 group">
                     <a
                       href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-[#F7941E] transition-all duration-500 py-5"
+                      class="font-semibold text-lg font-jost transition-all duration-500 group-hover:text-[#F7941E]"
                       >Services
-                      <span class=""
-                        ><i
-                          class="fa-solid fa-angle-down text-sm"
-                          aria-hidden="true"
-                        ></i></span
-                    ></a>
+                      <span
+                        ><i class="fa-solid fa-angle-down text-sm"></i
+                      ></span>
+                    </a>
                     <ul
-                      class="absolute top-full z-10 shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 bg-white"
+                      class="absolute top-full z-10 shadow-sm min-w-56 bg-white transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
                     >
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Services</a
                         >
                       </li>
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Services Details</a
                         >
                       </li>
                     </ul>
                   </li>
+
                   <!-- Blog -->
-                  <li class="leading-[164%] relative py-5 group">
+                  <li class="relative py-5 group">
                     <a
                       href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-[#F7941E] transition-all duration-500 py-5"
+                      class="font-semibold text-lg font-jost transition-all duration-500 group-hover:text-[#F7941E]"
                       >Blog
-                      <span class=""
-                        ><i
-                          class="fa-solid fa-angle-down text-sm"
-                          aria-hidden="true"
-                        ></i></span
-                    ></a>
+                      <span
+                        ><i class="fa-solid fa-angle-down text-sm"></i
+                      ></span>
+                    </a>
                     <ul
-                      class="absolute top-full z-10 shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 bg-white"
+                      class="absolute top-full z-10 shadow-sm min-w-56 bg-white transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
                     >
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Blog</a
                         >
                       </li>
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Blog Details</a
                         >
                       </li>
                     </ul>
                   </li>
+
                   <!-- Pages -->
-                  <li class="leading-[164%] relative py-5 group">
+                  <li class="relative py-5 group">
                     <a
                       href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-[#F7941E] transition-all duration-500 py-5"
+                      class="font-semibold text-lg font-jost transition-all duration-500 group-hover:text-[#F7941E]"
                       >Pages
-                      <span class=""
-                        ><i
-                          class="fa-solid fa-angle-down text-sm"
-                          aria-hidden="true"
-                        ></i></span
-                    ></a>
+                      <span
+                        ><i class="fa-solid fa-angle-down text-sm"></i
+                      ></span>
+                    </a>
                     <ul
-                      class="absolute top-full z-10 shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 bg-white"
+                      class="absolute top-full z-10 shadow-sm min-w-56 bg-white transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
                     >
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >About</a
                         >
                       </li>
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Services</a
                         >
                       </li>
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Services Details</a
                         >
                       </li>
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Faq</a
                         >
                       </li>
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
-                          >Portforlio</a
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
+                          >Portfolio</a
                         >
                       </li>
                       <li>
                         <a
-                          href=""
-                          class="font-semibold font-jost hover:text-white hover:bg-[#F7941E] transition-all duration-500 py-3 px-2.5 block border-b-slate-300"
+                          href="#"
+                          class="block py-3 px-2.5 border-b-slate-300 font-semibold font-jost transition-all duration-500 hover:bg-[#F7941E] hover:text-white"
                           >Contact</a
                         >
                       </li>
                     </ul>
                   </li>
+
                   <!-- Contact Us -->
-                  <li class="leading-[164%] relative py-5 group">
+                  <li class="relative py-5 group">
                     <a
                       href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-[#F7941E] transition-all duration-500 py-5"
+                      class="font-semibold text-lg font-jost transition-all duration-500 group-hover:text-[#F7941E]"
                       >Contact Us</a
                     >
                   </li>
                 </ul>
               </nav>
+
               <div class="flex gap-6 items-center">
                 <div class="cursor-pointer">
                   <i
@@ -303,20 +293,17 @@
                   ></i>
                 </div>
                 <button
-                  class="relative sm:flex hidden gap-2.5 items-center bg-[#1cbbb4] py-[18px] px-[30px] rounded-lg overflow-hidden group text-white"
+                  class="relative hidden sm:flex gap-2.5 items-center bg-[#1cbbb4] py-4 px-6 rounded-lg text-white overflow-hidden group"
                 >
                   <span class="relative z-10">Get A Quote</span>
                   <span
-                    class="absolute inset-0 w-full h-full bg-[#73BE48] transform -translate-x-full group-hover:translate-x-0 transition-all duration-700"
+                    class="absolute inset-0 w-full h-full bg-[#73BE48] transition-all duration-700 transform -translate-x-full group-hover:translate-x-0"
                   ></span>
                   <div class="relative z-10">
-                    <i
-                      class="fa-solid fa-arrow-right"
-                      style="color: #ffffff"
-                    ></i>
+                    <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </button>
-                <div class="lg:hidden text-3xl">
+                <div class="text-3xl lg:hidden">
                   <i class="fa-solid fa-bars"></i>
                 </div>
               </div>
@@ -332,26 +319,27 @@
           <h1
             class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]"
           >
-            <span class="relative"
-              >Exploring Minds
-              <span class="absolute -left-6 top-1 text-3xl"
-                ><i class="fa-solid fa-lines-leaning"></i></span
-            ></span>
+            <span class="relative">
+              Exploring Minds
+              <span class="absolute -left-6 top-1 text-3xl">
+                <i class="fa-solid fa-lines-leaning"></i>
+              </span>
+            </span>
             <span class="font-bold">Elementary</span>
             <span class="font-bold text-[#ED145B]">School</span>
           </h1>
           <div class="flex absolute right-[87px] top-14 animate-skw">
             <img
               src="../img/shap.png"
-              alt="shap-2"
+              alt="shape-2"
               class="w-7.5 h-12.5 relative top-9"
             />
-            <img src="../img/shap.png" alt="shap-1" />
-            <img src="../img/shap.png" alt="shap-2" class="w-5 h-8 -mt-7" />
+            <img src="../img/shap.png" alt="shape-1" />
+            <img src="../img/shap.png" alt="shape-2" class="w-5 h-8 -mt-7" />
           </div>
           <p class="pt-5 max-w-[431px] text-[#686868]">
             Starting a corporate business typically involves several steps, such
-            as develo a business
+            as developing a business.
           </p>
           <button
             class="mt-6 relative flex gap-2.5 items-center bg-[#73BE48] py-[18px] px-[30px] rounded-lg overflow-hidden group text-white"
@@ -362,167 +350,155 @@
             ></span>
           </button>
         </div>
+
+        <!-- Left Image with Circle Border -->
         <div
           class="absolute left-[8.625rem] lg:top-0 top-10 lg:max-w-full max-w-[200px] sm:block hidden animate-up-down"
         >
-          <img src="../img/boy_img_1.png" alt="" />
+          <img src="../img/boy_img_1.png" alt="Boy Image 1" />
           <span
-            class="absolute -left-2.5 top-[9px] border-2 border-[#F7941E] rounded-[125px] w-full h-full"
+            class="absolute -left-2.5 top-[9px] border-2 border-[#F7941E] rounded-full w-full h-full"
           ></span>
         </div>
+
+        <!-- Right Image with Circle Border -->
         <div
           class="absolute right-[110px] bottom-0 pb-[71px] lg:block hidden animate-up-down"
         >
-          <img src="../img/boy_img_2.png" alt="" />
+          <img src="../img/boy_img_2.png" alt="Boy Image 2" />
           <span
-            class="absolute -left-2.5 top-[9px] border-2 border-[#1CBBB4] rounded-[125px] max-h-[369px] w-full h-full"
+            class="absolute -left-2.5 top-[9px] border-2 border-[#1CBBB4] rounded-full max-h-[369px] w-full h-full"
           ></span>
         </div>
+
+        <!-- Background Image -->
         <div class="lg:pt-[72px]">
-          <img src="../img/painting.png" alt="" />
+          <img src="../img/painting.png" alt="Painting" />
         </div>
+
+        <!-- Decorative Elements for Large Screens -->
         <div class="lg:block hidden">
           <div class="absolute left-0 top-[60px] animate-left-right-2">
-            <img src="../img/left-circle-1.png" alt="img" />
+            <img src="../img/left-circle-1.png" alt="Left Circle 1" />
           </div>
           <div class="absolute left-[37px] top-[186px] animate-left-right-2">
-            <img src="../img/left-circle-2.png" alt="img" />
+            <img src="../img/left-circle-2.png" alt="Left Circle 2" />
           </div>
           <div class="absolute right-0 bottom-[165px] animate-up-down">
-            <img src="../img/right-circle.png" alt="img" />
+            <img src="../img/right-circle.png" alt="Right Circle" />
           </div>
         </div>
       </div>
     </section>
+
     <!-- 
     Feature Stats -->
     <section class="lg:pt-15 pt-10 lg:pb-15 pb-10">
       <div
         class="container mx-auto flex xl:flex-row flex-col max-w-[1288px] lg:px-3 px-10"
       >
-        <!-- div left -->
+        <!-- Left Section -->
         <div class="xl:w-1/2 w-full">
           <div class="xl:inline-block hidden">
-            <p class="font-bubblegum text-orange-500 text-[19px]">
+            <p class="font-bubblegum text-orange-500 text-[19px] animate-fade-in-up">
               Number Talks
             </p>
-            <p class="font-bold font-jost text-[32px] leading-[130%] pb-5">
+            <p class="font-bold font-jost text-[32px] leading-[130%] pb-5 animate-fade-in-up">
               Invest in education invest <br />in the future
             </p>
-            <p class="text-[#686868]">
+            <p class="text-[#686868] animate-fade-in-up">
               Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
               dictum facilisis <br />
               sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum
-              Lorem ipsum <br />dolor sit amet consectetur. Amet lectus mi
-              ultricies dictum
+              Lorem ipsum <br />
+              dolor sit amet consectetur. Amet lectus mi ultricies dictum
             </p>
           </div>
-          <div class="inline-block xl:hidden">
-            <p class="font-bubblegum text-orange-500 text-[19px]">
-              Number Talks
-            </p>
-            <p class="font-bold font-jost text-[32px] leading-[130%] pb-5">
-              Invest in education invest in the future
-            </p>
-            <p class="text-[#686868]">
-              Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
-              dictum facilisis sem. Imperdiet massa turpis sit proin metus
-              volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
-              lectus mi ultricies dictum
-            </p>
-          </div>
+          
           <button
-            class="mt-7 relative flex gap-2.5 items-center bg-[#fff] py-[18px] px-[25px] rounded-lg border overflow-hidden group text-black hover:text-white transition-all duration-700"
+            class="mt-7 relative flex gap-2.5 items-center bg-white py-[18px] px-[25px] rounded-lg border overflow-hidden group text-black hover:text-white transition-all duration-700"
           >
             <span class="relative z-10">Get a quote</span>
             <span
               class="absolute inset-0 w-full h-full bg-[#1CBBB4] transform -translate-x-full group-hover:translate-x-0 transition-all duration-700"
             ></span>
-            <div class="relative z-10"></div>
           </button>
         </div>
-        <!-- div right -->
+
+        <!-- Right Section -->
         <div
           class="xl:w-1/2 w-full grid xl:mt-0 mt-12 sm:grid-cols-2 grid-cols-1 gap-7 font-jost"
         >
-          <!-- Item 1-->
+          <!-- Card Items -->
           <div
-            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px]"
+            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px] animate-fade-in-up"
           >
             <div
               class="bg-[#F7941E] rounded-full w-20 h-20 text-center leading-[90px]"
             >
-              <i
-                class="text-4xl fa-brands fa-fort-awesome"
-                style="color: #fffafa"
-              ></i>
+              <i class="text-4xl fa-brands fa-fort-awesome text-white"></i>
             </div>
             <div>
               <p class="text-[32px] font-bold leading-7">20K</p>
               <p class="text-[#686868] text-[17px]">Running Students</p>
             </div>
           </div>
-          <!-- Item 2-->
+
           <div
-            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px]"
+            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px] animate-fade-in-up"
           >
             <div
               class="bg-[#ED145B] rounded-full w-20 h-20 text-center leading-[95px]"
             >
-              <i
-                class="text-4xl fa-solid fa-book-open"
-                style="color: #ffffff"
-              ></i>
+              <i class="text-4xl fa-solid fa-book-open text-white"></i>
             </div>
             <div>
               <p class="text-[32px] font-bold leading-7">13K</p>
               <p class="text-[#686868] text-[17px]">Completed</p>
             </div>
           </div>
-          <!-- Item 3-->
+
           <div
-            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px]"
+            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px] animate-fade-in-up"
           >
             <div
               class="bg-[#73BE48] rounded-full w-20 h-20 text-center leading-[97px]"
             >
-              <i class="text-4xl fa-solid fa-cube" style="color: #ffffff"></i>
+              <i class="text-4xl fa-solid fa-cube text-white"></i>
             </div>
             <div>
               <p class="text-[32px] font-bold leading-7">3K</p>
               <p class="text-[#686868] text-[17px]">Award Winning</p>
             </div>
           </div>
-          <!-- Item 4-->
+
           <div
-            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px]"
+            class="border rounded-lg p-5 flex space-x-5 items-center xl:w-[298px] w-full h-[141px] animate-fade-in-up"
           >
             <div
               class="bg-[#1CBBB4] rounded-full w-20 h-20 text-center leading-[90px]"
             >
-              <i
-                class="text-4xl fa-brands fa-fort-awesome"
-                style="color: #fffafa"
-              ></i>
+              <i class="text-4xl fa-brands fa-fort-awesome text-white"></i>
             </div>
             <div>
               <p class="text-[32px] font-bold leading-7">13K</p>
               <p class="text-[#686868] text-[17px]">
-                Guardian <br />Satishfaction
+                Guardian <br />Satisfaction
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- About us -->
     <section class="lg:pt-15 pt-10 lg:pb-15 pb-10">
       <div
         class="container mx-auto max-w-[1288px] flex xl:flex-row flex-col items-center gap-10"
       >
-        <!-- about us left -->
+        <!-- About Us Left -->
         <div
-          class="md:w-1/2 w-full flex md:flex-row flex-col md:items-end items-start gap-6 shrink-0 md:pl-0 pl-2"
+          class="md:w-1/2 w-full flex md:flex-row flex-col md:items-end items-start gap-6 shrink-0 md:pl-0 pl-2 animate-fade-in-up"
         >
           <div class="w-[95%]">
             <img src="../img/shap-1.png" alt="" />
@@ -530,7 +506,7 @@
               <img
                 src="../img/about-1.png"
                 alt=""
-                class="md:w-[320px]  w-full"
+                class="md:w-[320px] w-full"
               />
             </div>
           </div>
@@ -543,7 +519,7 @@
               <p class="text-[#686868]">Learning Ladder School</p>
             </div>
             <div
-              class="p-6 bg-[#fff] shadow-inner rounded-xl drop-shadow-custom"
+              class="p-6 bg-white shadow-inner rounded-xl drop-shadow-custom"
             >
               <p
                 class="text-[32px] font-bold text-[#1CBBB4] font-jost leading-6"
@@ -554,36 +530,37 @@
             </div>
           </div>
         </div>
-        <!-- about us right -->
+
+        <!-- About Us Right -->
         <div class="w-1/2 xl:pl-24 pl-0">
-          <p class="font-bubblegum text-[#1CBBB4] text-[19px]">About us</p>
-          <p class="font-bold font-jost text-[32px] leading-[130%] pb-5">
+          <p class="font-bubblegum text-[#1CBBB4] text-[19px] animate-fade-in-up">About us</p>
+          <p class="font-bold font-jost text-[32px] leading-[130%] pb-5 animate-fade-in-up">
             Unlocking Potential, One <br />
-            Child at a just Time in school
+            Child at a Time in school
           </p>
-          <p class="text-[#686868]">
+          <p class="text-[#686868] animate-fade-in-up">
             Lorem ipsum dolor sit amet consectetur. Amet lectus mi <br />
             ultricies dictum facilisis sem. Imperdiet massa turpis sit proin
             <br />
-            metus volutpat loren ipsum Lorem ipsum dolor sit amet <br />
+            metus volutpat lorem ipsum Lorem ipsum dolor sit amet <br />
             consectetur. Amet lectus mi ultricies dictum
           </p>
           <button
-            class="mt-7 relative flex gap-2.5 items-center bg-[#fff] py-[18px] px-[25px] rounded-lg border overflow-hidden group text-black hover:text-white transition-all duration-700"
+            class="mt-7 relative flex gap-2.5 items-center bg-white py-[18px] px-[25px] rounded-lg border overflow-hidden group text-black hover:text-white transition-all duration-700"
           >
             <span class="relative z-10">Get a quote</span>
             <span
               class="absolute inset-0 w-full h-full bg-[#1CBBB4] transform -translate-x-full group-hover:translate-x-0 transition-all duration-700"
             ></span>
-            <div class="relative z-10"></div>
           </button>
         </div>
       </div>
     </section>
+
     <!-- education -->
     <section class="lg:pt-15 pt-10 lg:pb-15 pb-10 relative z-10">
       <div
-        class="absolute lg:top-10 top-[70px] right-5 z-0 md:inline-block hidden"
+        class="absolute lg:top-10 top-[70px] right-5 z-0 md:inline-block hidden animate-left-right"
       >
         <img
           src="../img/pencil-rocket.png"
@@ -595,17 +572,17 @@
         class="container mx-auto max-w-[1288px] md:w-full w-[90%] relative z-10"
       >
         <div class="text-center">
-          <p class="font-bubblegum text-[#73BE48] text-[19px]">
+          <p class="font-bubblegum text-[#73BE48] text-[19px] animate-fade-in-up">
             Educational Programs
           </p>
-          <p class="font-bold text-[32px] font-jost lg:w-1/2 lg:mx-auto w-full">
-            Strong Foundation for Success For Nurturing Curiosityl
+          <p class="font-bold text-[32px] font-jost lg:w-1/2 lg:mx-auto w-full animate-fade-in-up">
+            Strong Foundation for Success For Nurturing Curiosity
           </p>
         </div>
         <div class="grid md:grid-cols-2 grid-cols-1 pt-16 gap-16">
-          <!-- item 1 -->
+          <!-- Item 1 -->
           <div
-            class="border rounded-lg md:p-10 pt-20 pl-7 pb-7 relative md:pl-20 transition-all duration-500 group hover:border-none hover:shadow-2xl"
+            class="border rounded-lg md:p-10 pt-20 pl-7 pb-7 relative md:pl-20 transition-all duration-500 group hover:border-none hover:shadow-2xl animate-fade-in-up"
           >
             <p
               class="cursor-pointer group-hover:text-[#73BE48] font-semibold transition-all duration-500 text-2xl font-jost"
@@ -613,11 +590,9 @@
               Online Class
             </p>
             <p class="mt-4 text-[#686868]">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit platea
-              
-              the ,osr of a proin mollis pretium facilisi in, ligula volutpat
+              Lorem ipsum dolor sit amet consectetur adipiscing elit platea,
+              proin mollis pretium facilisi in ligula volutpat.
             </p>
-
             <div class="group/button mt-[30px]">
               <button
                 class="hover:text-[#73BE48] transition-all duration-500 flex items-center gap-2"
@@ -628,18 +603,15 @@
                 ></i>
               </button>
             </div>
-
             <div
-              class="text-center absolute md:w-[88px] md:h-[88px] w-12 h-12 transition-all duration-500 border rounded-lg md:text-[45px] text-[24px] top-[10%] left-6 px-2.5 pt-[8px] md:pb-[10px] md:pt-[10px] md:top-[37%] md:-left-10 bg-white group-hover:bg-[#73BE48] hover:text-[#fff]"
+              class="text-center absolute md:w-[88px] md:h-[88px] w-12 h-12 border rounded-lg md:text-[45px] text-[24px] top-[10%] left-6 px-2.5 pt-[8px] md:pb-[10px] md:pt-[10px] md:top-[37%] md:-left-10 bg-white group-hover:bg-[#73BE48] text-[#73BE48] group-hover:text-white transition-all duration-500"
             >
-              <i
-                class="fa-solid fa-car-side !text-[#73be48] group-hover:!text-white transition-all duration-500"
-              ></i>
+              <i class="fa-solid fa-car-side"></i>
             </div>
           </div>
-          <!-- item 2 -->
+          <!-- Item 2 -->
           <div
-            class="border rounded-lg p-10 relative pl-20 transition-all duration-500 group hover:border-none hover:shadow-2xl bg-white"
+            class="border rounded-lg md:p-10 pt-20 pl-7 pb-7 relative md:pl-20 transition-all duration-500 group hover:border-none hover:shadow-2xl animate-fade-in-up"
           >
             <p
               class="cursor-pointer group-hover:text-[#73BE48] font-semibold transition-all duration-500 text-2xl font-jost"
@@ -647,11 +619,9 @@
               Formal Tuition
             </p>
             <p class="mt-4 text-[#686868]">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit platea
-              <br />
-              the ,osr of a proin mollis pretium facilisi in, ligula volutpat
+              Lorem ipsum dolor sit amet consectetur adipiscing elit platea,
+              proin mollis pretium facilisi in ligula volutpat.
             </p>
-
             <div class="group/button mt-[30px]">
               <button
                 class="hover:text-[#73BE48] transition-all duration-500 flex items-center gap-2"
@@ -662,18 +632,15 @@
                 ></i>
               </button>
             </div>
-
             <div
-              class="absolute w-[88px] h-[88px] transition-all duration-500 border rounded-lg text-[45px] px-2.5 py-[10px] top-[37%] -left-10 bg-white group-hover:bg-[#73BE48] hover:text-[#fff] text-center"
+              class="text-center absolute md:w-[88px] md:h-[88px] w-12 h-12 border rounded-lg md:text-[45px] text-[24px] top-[10%] left-6 px-2.5 pt-[8px] md:pb-[10px] md:pt-[10px] md:top-[37%] md:-left-10 bg-white group-hover:bg-[#73BE48] text-[#73BE48] group-hover:text-white transition-all duration-500"
             >
-              <i
-                class="fa-solid fa-cart-shopping !text-[#73be48] group-hover:!text-white transition-all duration-500"
-              ></i>
+              <i class="fa-solid fa-cart-shopping"></i>
             </div>
           </div>
-          <!-- item 3 -->
+          <!-- Item 3 -->
           <div
-            class="border rounded-lg p-10 relative pl-20 transition-all duration-500 group hover:border-none hover:shadow-2xl"
+            class="border rounded-lg md:p-10 pt-20 pl-7 pb-7 relative md:pl-20 transition-all duration-500 group hover:border-none hover:shadow-2xl animate-fade-in-up"
           >
             <p
               class="cursor-pointer group-hover:text-[#73BE48] font-semibold transition-all duration-500 text-2xl font-jost"
@@ -681,11 +648,9 @@
               Preschool
             </p>
             <p class="mt-4 text-[#686868]">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit platea
-              <br />
-              the ,osr of a proin mollis pretium facilisi in, ligula volutpat
+              Lorem ipsum dolor sit amet consectetur adipiscing elit platea,
+              proin mollis pretium facilisi in ligula volutpat.
             </p>
-
             <div class="group/button mt-[30px]">
               <button
                 class="hover:text-[#73BE48] transition-all duration-500 flex items-center gap-2"
@@ -696,18 +661,15 @@
                 ></i>
               </button>
             </div>
-
             <div
-              class="absolute w-[88px] h-[88px] transition-all duration-500 border rounded-lg text-[45px] px-2.5 py-[10px] top-[37%] -left-10 bg-white group-hover:bg-[#73BE48] hover:text-[#fff] text-center"
+              class="text-center absolute md:w-[88px] md:h-[88px] w-12 h-12 border rounded-lg md:text-[45px] text-[24px] top-[10%] left-6 px-2.5 pt-[8px] md:pb-[10px] md:pt-[10px] md:top-[37%] md:-left-10 bg-white group-hover:bg-[#73BE48] text-[#73BE48] group-hover:text-white transition-all duration-500"
             >
-              <i
-                class="fa-solid fa-beer-mug-empty !text-[#73be48] group-hover:!text-white transition-all duration-500"
-              ></i>
+              <i class="fa-solid fa-beer-mug-empty"></i>
             </div>
           </div>
-          <!-- item 4 -->
+          <!-- Item 4 -->
           <div
-            class="border rounded-lg p-10 relative pl-20 transition-all duration-500 group hover:border-none hover:shadow-2xl"
+            class="border rounded-lg md:p-10 pt-20 pl-7 pb-7 relative md:pl-20 transition-all duration-500 group hover:border-none hover:shadow-2xl animate-fade-in-up"
           >
             <p
               class="cursor-pointer group-hover:text-[#73BE48] font-semibold transition-all duration-500 text-2xl font-jost"
@@ -715,11 +677,9 @@
               Special Tuition
             </p>
             <p class="mt-4 text-[#686868]">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit platea
-              <br />
-              the ,osr of a proin mollis pretium facilisi in, ligula volutpat
+              Lorem ipsum dolor sit amet consectetur adipiscing elit platea,
+              proin mollis pretium facilisi in ligula volutpat.
             </p>
-
             <div class="group/button mt-[30px]">
               <button
                 class="hover:text-[#73BE48] transition-all duration-500 flex items-center gap-2"
@@ -730,30 +690,31 @@
                 ></i>
               </button>
             </div>
-
             <div
-              class="absolute w-[88px] h-[88px] transition-all duration-500 border rounded-lg text-[45px] px-2.5 py-[10px] top-[37%] -left-10 bg-white group-hover:bg-[#73BE48] hover:text-[#fff] text-center"
+              class="text-center absolute md:w-[88px] md:h-[88px] w-12 h-12 border rounded-lg md:text-[45px] text-[24px] top-[10%] left-6 px-2.5 pt-[8px] md:pb-[10px] md:pt-[10px] md:top-[37%] md:-left-10 bg-white group-hover:bg-[#73BE48] text-[#73BE48] group-hover:text-white transition-all duration-500"
             >
-              <i
-                class="fa-solid fa-book-open !text-[#73be48] group-hover:!text-white transition-all duration-500"
-              ></i>
+              <i class="fa-solid fa-book-open"></i>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Portforlio -->
-    <section class="lg:pt-15 lg:pb-15 pt-10 pb-10 portfolio">
+    <section class="lg:pt-15 lg:pb-15 pt-10 pb-10 portfolio"> 
       <div class="container mx-auto max-w-[1288px]">
-        <div class="text-center">
-          <p class="font-bubblegum text-[19px] text-[#1CBBB4]">
+        <div class="text-center flex flex-col items-center">
+          <p class="font-bubblegum text-[19px] text-[#1CBBB4] animate-fade-in-up">
             Latest Portfolio
           </p>
-          <p class="font-jost text-[32px] font-bold">
+          <p
+            class="font-jost font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[630px] text-center animate-fade-in-up"
+          >
             Exploring Minds Elementary School <br />
             Education the only school
           </p>
         </div>
+
         <div class="flex flex-wrap space-x-8 justify-center pt-8">
           <button
             class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none transition border rounded-lg hover:bg-[#F7941E] duration-500 bg-[#F7941E] text-white"
@@ -787,9 +748,9 @@
         </div>
 
         <!-- Tab Contents -->
-        <div class="tab-content mt-16" id="tab-1">
-          <div class="flex gap-7">
-            <div class="relative group">
+        <div class="tab-content mt-16" id="tab-1 ">
+          <div class="flex gap-7 animate-fade-in-Up">
+            <div class="relative group animate-fade-in-Up">
               <img src="../img/portfolio-1.png" alt="" />
               <div
                 class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
@@ -818,7 +779,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col gap-7">
+            <div class="flex flex-col gap-7 animate-fade-in-Up">
               <div class="flex gap-7">
                 <div class="relative group">
                   <img src="../img/portfolio-2.png" alt="" />
@@ -943,8 +904,8 @@
           </div>
         </div>
 
-        <div class="tab-content mt-16" id="tab-2">
-          <div class="grid grid-cols-12 gap-7">
+        <div class="tab-content mt-16" id="tab-2 animate-fade-in-Up">
+          <div class="grid grid-cols-12 gap-7 animate-fade-in-Up">
             <div class="col-span-7">
               <div class="relative group">
                 <img
@@ -1090,8 +1051,8 @@
           </div>
         </div>
 
-        <div class="tab-content mt-16" id="tab-3">
-          <div class="grid grid-cols-12 gap-7 mt-7">
+        <div class="tab-content mt-16" id="tab-3 animate-fade-in-up">
+          <div class="grid grid-cols-12 gap-7 mt-7 animate-fade-in-Up" >
             <div class="col-span-6">
               <div class="relative group">
                 <img
@@ -1164,8 +1125,8 @@
             </div>
           </div>
         </div>
-        <div class="tab-content mt-16" id="tab-4">
-          <div class="grid grid-cols-12 gap-7">
+        <div class="tab-content mt-16" id="tab-4 animate-fade-in-up">
+          <div class="grid grid-cols-12 gap-7 animate-fade-in-Up">
             <div class="col-span-7">
               <div class="relative group">
                 <img
@@ -1238,8 +1199,8 @@
             </div>
           </div>
         </div>
-        <div class="tab-content mt-16" id="tab-5">
-          <div class="flex gap-7">
+        <div class="tab-content mt-16" id="tab-5 animate-fade-in-up">
+          <div class="flex gap-7 animate-fade-in-Up">
             <div class="relative group">
               <img src="../img/portfolio-1.png" alt="" />
               <div
@@ -1405,16 +1366,16 @@
         <div class="relative z-10">
           <div class="flex justify-between items-center">
             <div class="text-start">
-              <p class="font-bubblegum text-[19px] text-[#1CBBB4]">
+              <p class="font-bubblegum text-[19px] text-[#1CBBB4] animate-fade-in-up">
                 Latest Services
               </p>
-              <p class="font-jost text-[32px] font-bold">
+              <p class="font-jost text-[32px] font-bold animate-fade-in-up">
                 Building a Str Foundation <br />
                 for Success
               </p>
             </div>
             <div class="pr-9">
-              <p class="text-[#686868]">
+              <p class="text-[#686868] animate-fade-in-up">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit platea
                 pharetra, nostra mattis <br />
                 hendrerit proin mollis pretium facilisi in, ligula volutpat
@@ -1457,7 +1418,7 @@
 
                     <h4 class="lg:max-w-[176px] mt-5">
                       <a
-                        href="service-details.html"
+                        href="#"
                         class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[#73BE48] transition-all duration-500"
                         >Learning School heres us</a
                       >
@@ -1467,7 +1428,7 @@
                         Lorem ipsum dolor sit amet a the a conse adipiscing
                       </p>
                       <a
-                        href="service-details.html"
+                        href="#"
                         class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
                       >
                         <span
@@ -1496,7 +1457,7 @@
 
                     <h4 class="lg:max-w-[176px] mt-5">
                       <a
-                        href="service-details.html"
+                        href="#"
                         class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[#73BE48] transition-all duration-500"
                         >Learning School heres us</a
                       >
@@ -1506,7 +1467,7 @@
                         Lorem ipsum dolor sit amet a the a conse adipiscing
                       </p>
                       <a
-                        href="service-details.html"
+                        href="#"
                         class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
                       >
                         <span
@@ -1535,7 +1496,7 @@
 
                     <h4 class="lg:max-w-[176px] mt-5">
                       <a
-                        href="service-details.html"
+                        href="#"
                         class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[#73BE48] transition-all duration-500"
                         >Learning School heres us</a
                       >
@@ -1545,7 +1506,7 @@
                         Lorem ipsum dolor sit amet a the a conse adipiscing
                       </p>
                       <a
-                        href="service-details.html"
+                        href="#"
                         class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
                       >
                         <span
@@ -1572,7 +1533,7 @@
 
                     <h4 class="lg:max-w-[176px] mt-5">
                       <a
-                        href="service-details.html"
+                        href="#"
                         class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[#73BE48] transition-all duration-500"
                         >Learning School heres us</a
                       >
@@ -1582,7 +1543,7 @@
                         Lorem ipsum dolor sit amet a the a conse adipiscing
                       </p>
                       <a
-                        href="service-details.html"
+                        href="#"
                         class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
                       >
                         <span
@@ -1606,14 +1567,152 @@
           </div>
         </div>
 
-        <div class="absolute bottom-[-3.25rem] z-0">
+        <div class="absolute bottom-[-3.25rem] z-0 animate-left-right">
           <img src="../img/man.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Faq  -->
+    <section class="lg:pb-15 pb-10">
+      <div class="container mx-auto max-w-[1288px]">
+        <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
+          <!-- Hình ảnh bên trái -->
+          <div class="max-w-[528px] lg:max-w-full mx-auto">
+            <img src="../img/banner-1.png" alt="child" />
+          </div>
+          <div>
+            <!-- Title -->
+            <div class="lg:max-w-[520px] pb-10">
+              <div class="lg:max-w-[520px] pb-10">
+                <p
+                  class="text-[#1CBBB4] font-bubblegum text-[19px] animate-fade-in-up"
+                  "
+                >
+                  Some Faq
+                </p>
+                <h2
+                  class="font-bold font-jost lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] animate-fade-in-up"
+                  
+                >
+                  Empowering Children Through Education Playful Mind
+                </h2>
+              </div>
+            </div>
+            <!-- Các thẻ div -->
+            <div
+              class="rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[15px] according-item mb-5"
+              data-open="false"
+            >
+              <div
+                class="flex justify-between items-center cursor-pointer according-btn active-accor"
+              >
+                <h4
+                  class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
+                >
+                  Why do we have to go to school?
+                </h4>
+                <span
+                  class="bg-[#F7941E] rounded-md flex justify-center items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon"
+                >
+                  <i
+                    class="fa-solid fa-minus text-[#fff]"
+                    aria-hidden="true"
+                  ></i>
+                  <i class="fa-solid fa-plus text-[#fff]"></i>
+                </span>
+              </div>
+              <div
+                class="max-h-0 opacity-0 invisible transition-all duration-500 accordion-details"
+              >
+                <div class="pt-5 text-[#686868]">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[15px] mt-7.5 according-item mb-5"
+              data-open="false"
+            >
+              <div
+                class="flex justify-between items-center cursor-pointer according-btn active-accor"
+              >
+                <h4
+                  class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
+                >
+                  Why do we have to go to school?
+                </h4>
+                <span
+                  class="bg-[#F7941E] rounded-md flex justify-center items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon"
+                >
+                  <i
+                    class="fa-solid fa-minus text-[#fff]"
+                    aria-hidden="true"
+                  ></i>
+                  <i class="fa-solid fa-plus text-[#fff]"></i>
+                </span>
+              </div>
+              <div
+                class="max-h-0 opacity-0 invisible transition-all duration-500 accordion-details"
+              >
+                <div class="pt-5 text-[#686868]">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[15px] mt-7.5 according-item"
+              data-open="false"
+            >
+              <div
+                class="flex justify-between items-center cursor-pointer according-btn"
+              >
+                <h4
+                  class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
+                >
+                  Why do we have to go to school?
+                </h4>
+                <span
+                  class="bg-[#F7941E] rounded-md flex justify-center items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon"
+                >
+                  <i
+                    class="fa-solid fa-minus text-[#fff]"
+                    aria-hidden="true"
+                  ></i>
+                  <i class="fa-solid fa-plus text-[#fff]"></i>
+                </span>
+              </div>
+              <div
+                class="max-h-0 opacity-0 invisible transition-all duration-500 accordion-details"
+              >
+                <div class="pt-5 text-[#686868]">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const tabButtons = document.querySelectorAll(".tab-button");
@@ -1655,5 +1754,62 @@
         },
       });
     </script>
+
+    <script>
+      document.querySelectorAll(".according-item").forEach((item) => {
+        const button = item.querySelector(".according-btn");
+        const details = item.querySelector(".accordion-details");
+        const iconSpan = item.querySelector(".icon");
+
+        button.addEventListener("click", () => {
+          const isOpen = item.getAttribute("data-open") === "true";
+
+          // Đóng tất cả accordion
+          document.querySelectorAll(".according-item").forEach((innerItem) => {
+            innerItem.setAttribute("data-open", "false");
+            const innerDetails = innerItem.querySelector(".accordion-details");
+            innerDetails.style.maxHeight = "0";
+            innerDetails.style.opacity = "0";
+            innerDetails.style.visibility = "hidden";
+            innerItem.querySelector(".icon .fa-minus").style.display = "none";
+            innerItem.querySelector(".icon .fa-plus").style.display = "block";
+
+            // Đặt lại màu nền cho thẻ span
+            innerItem.querySelector(".icon").style.backgroundColor = "#F7941E";
+          });
+
+          if (!isOpen) {
+            item.setAttribute("data-open", "true");
+            details.style.maxHeight = `${details.scrollHeight}px`;
+            details.style.opacity = "1";
+            details.style.visibility = "visible";
+            item.querySelector(".icon .fa-minus").style.display = "block";
+            item.querySelector(".icon .fa-plus").style.display = "none";
+
+            // Thay đổi màu nền của thẻ span
+            iconSpan.style.backgroundColor = "#1CBBB4";
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".according-item").forEach((item) => {
+          const isOpen = item.getAttribute("data-open") === "true";
+          const iconPlus = item.querySelector(".icon .fa-plus");
+          const iconMinus = item.querySelector(".icon .fa-minus");
+          const iconSpan = item.querySelector(".icon");
+
+          if (isOpen) {
+            iconMinus.style.display = "block";
+            iconPlus.style.display = "none";
+            iconSpan.style.backgroundColor = "#1CBBB4";
+          } else {
+            iconMinus.style.display = "none";
+            iconPlus.style.display = "block";
+            iconSpan.style.backgroundColor = "#F7941E";
+          }
+        });
+      });
+    </script>
   </body>
-</html
+</html>
