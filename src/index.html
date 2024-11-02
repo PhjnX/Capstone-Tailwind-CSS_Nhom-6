@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ascent</title>
 
-    <!-- font-awesome -->
+    <!-- Tiêu đề của trang web -->
+    <title>Ascent - Childcare & Kids School HTML Template</title>
+    <!-- Biểu tượng favicon của trang web -->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+
+    <!-- Kết nối với thư viện Font Awesome để sử dụng các biểu tượng -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -14,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- google-font -->
+    <!-- Kết nối với Google Fonts để sử dụng các phông chữ -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -28,73 +32,95 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="/Capstone-Tailwind-CSS_Nhom-6/src/css/output.css"
-    />
-
-    <!-- swiper css  -->
+    <!-- Kết nối với thư viện Swiper CSS để tạo các slider và carousel -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <!-- Kết nối với thư viện Animate.css để thêm hiệu ứng chuyển động -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../node_modules/wow.js/css/libs/animate.css" />
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css" />
+
+    <!-- Kết nối với các tệp CSS cho biểu tượng -->
+    <link rel="stylesheet" href="assets/icons/style.css" />
+
+    <!-- Kết nối với thư viện Owl Carousel để tạo các carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Kết nối với các tệp CSS tùy chỉnh -->
     <link rel="stylesheet" href="/src/css/output.css" />
     <link rel="stylesheet" href="/src/css/input.css" />
   </head>
 
   <body class="font-nunito">
-    <!-- Header -->
+    <!-- Header Section -->
     <header
       id="header-content"
       class="inline-block w-full transition-all duration-300 z-50"
     >
       <div id="header-content">
-        <!-- Hero Header Section -->
+        <!-- Hero Header Section: Phần đầu trang chính với màu nền đỏ -->
         <div id="hero__header" class="bg-[#ED145B]">
           <div
             class="max-w-[1288px] mx-auto md:flex lg:flex-row lg:justify-between md:flex-col hidden items-center"
           >
-            <!-- left -->
+            <!-- Phần bên trái của header: Thông tin liên hệ -->
             <div class="flex py-3 gap-8 text-white">
-              <!-- item 1  -->
+              <!-- Mục 1: Số điện thoại -->
               <div class="flex items-center">
                 <i class="fa-solid fa-phone text-[16.5px]"></i>
                 <span class="ml-2">(629) 555-0129</span>
               </div>
-              <!-- item 2 -->
+              <!-- Mục 2: Email -->
               <div class="flex items-center">
                 <i class="fa-solid fa-envelope"></i>
                 <span class="ml-2">info@example.com</span>
               </div>
-              <!-- item 3 -->
+              <!-- Mục 3: Địa chỉ -->
               <div class="flex items-center">
                 <i class="fa-solid fa-location-dot"></i>
                 <span class="ml-2">6391 Elgin St. Celina, 10299</span>
               </div>
             </div>
 
-            <!-- right -->
+            <!-- Phần bên phải của header: Mạng xã hội -->
             <div class="flex space-x-2">
+              <!-- Biểu tượng Facebook -->
               <a
                 href="#"
                 class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500 text-white"
               >
                 <i class="fa-brands fa-facebook-f text-xs"></i>
               </a>
-
+              <!-- Biểu tượng Twitter -->
               <a
                 href="#"
                 class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500 text-white"
               >
                 <i class="fa-brands fa-x-twitter text-xs"></i>
               </a>
+              <!-- Biểu tượng LinkedIn -->
               <a
                 href="#"
                 class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500 text-white"
               >
                 <i class="fa-brands fa-linkedin text-xs"></i>
               </a>
+              <!-- Biểu tượng Pinterest -->
               <a
                 href="#"
                 class="border px-2 border-white rounded-md border-opacity-20 hover:bg-[#F7941E] transition-all duration-500 text-white"
@@ -104,7 +130,7 @@
             </div>
           </div>
         </div>
-        <!-- Logo, Navbar Section -->
+        <!-- Logo và Navbar Section: Phần logo và thanh điều hướng -->
         <div
           id="navbar"
           class="bg-white [.header-pinned_&]:shadow-md bg-background transition-all duration-300"
@@ -112,11 +138,13 @@
           <div
             class="max-w-[1288px] mx-auto flex justify-between items-center py-5 lg:px-3 px-10"
           >
+            <!-- Logo -->
             <div class="flex items-center gap-1">
               <img src="../img/logo.png" alt="Ascent Logo" />
               <span class="text-3xl font-bold">Ascent</span>
             </div>
 
+            <!-- Menu điều hướng -->
             <div class="flex items-center gap-16">
               <nav class="hidden lg:flex lg:gap-16">
                 <ul class="flex items-center gap-6">
@@ -288,13 +316,16 @@
                 </ul>
               </nav>
 
+              <!-- Các biểu tượng tìm kiếm và nút quote -->
               <div class="flex gap-6 items-center">
+                <!-- Biểu tượng tìm kiếm -->
                 <div class="cursor-pointer">
                   <i
                     class="fa-solid fa-magnifying-glass text-[15px]"
                     aria-hidden="true"
                   ></i>
                 </div>
+                <!-- Nút yêu cầu báo giá -->
                 <button
                   class="relative hidden sm:flex gap-2.5 items-center bg-[#1cbbb4] py-4 px-6 rounded-lg text-white overflow-hidden group"
                 >
@@ -306,6 +337,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </button>
+                <!-- Biểu tượng menu cho màn hình nhỏ -->
                 <div class="text-3xl lg:hidden">
                   <i class="fa-solid fa-bars"></i>
                 </div>
@@ -315,12 +347,13 @@
         </div>
       </div>
     </header>
-    <!-- Carousel -->
+
+    <!-- Hero Header Section -->
     <section class="pt-[75px] lg:mb-15 mb-10 relative bg-[#FFF0E5]">
-      <div class="container relative">
+      <div class="container mx-auto px-4 lg:px-8 relative">
         <div class="flex flex-col items-center text-center relative z-10">
           <h1
-            class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]"
+            class="font-normal text-4xl md:text-5xl lg:text-6xl xl:text-[70px] xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-full lg:max-w-[776px]"
           >
             <span class="relative">
               Exploring Minds
@@ -331,19 +364,26 @@
             <span class="font-bold">Elementary</span>
             <span class="font-bold text-[#ED145B]">School</span>
           </h1>
-          <div class="flex absolute right-[87px] top-14 wow animate-skw">
+
+          <div
+            class="flex absolute right-[10%] md:right-[87px] top-14 wow animate-skw"
+          >
             <img
               src="../img/shap.png"
               alt="shape-2"
-              class="w-7.5 h-12.5 relative top-9"
+              class="w-8 h-10 md:w-7 md:h-12 relative top-9"
             />
-            <img src="../img/shap.png" alt="shape-1" />
-            <img src="../img/shap.png" alt="shape-2" class="w-5 h-8 -mt-7" />
+            <img src="../img/shap.png" alt="shape-1" class="w-8 h-10" />
+            <img src="../img/shap.png" alt="shape-2" class="w-6 h-8 -mt-7" />
           </div>
-          <p class="pt-5 max-w-[431px] text-[#686868]">
+
+          <p
+            class="pt-5 text-sm md:text-base max-w-full lg:max-w-[431px] text-[#686868]"
+          >
             Starting a corporate business typically involves several steps, such
             as developing a business.
           </p>
+
           <button
             class="mt-6 relative flex gap-2.5 items-center bg-[#73BE48] py-[18px] px-[30px] rounded-lg overflow-hidden group text-white"
           >
@@ -356,48 +396,60 @@
 
         <!-- Left Image with Circle Border -->
         <div
-          class="absolute left-[8.625rem] lg:top-0 top-10 lg:max-w-full max-w-[200px] sm:block hidden wow animate-up-down"
+          class="absolute left-10 lg:left-[8.625rem] top-20 md:top-10 lg:top-0 max-w-[150px] md:max-w-[200px] lg:max-w-full hidden sm:block wow animate-up-down"
         >
-          <img src="../img/boy_img_1.png" alt="Boy Image 1" />
+          <img
+            src="../img/boy_img_1.png"
+            alt="Boy Image 1"
+            class="max-w-full"
+          />
           <span
-            class="absolute -left-2.5 top-[9px] border-2 border-[#F7941E] rounded-full w-full h-full"
+            class="absolute -left-2 top-[9px] border-2 border-[#F7941E] rounded-full w-full h-full"
           ></span>
         </div>
 
         <!-- Right Image with Circle Border -->
         <div
-          class="absolute right-[110px] bottom-0 pb-[71px] lg:block hidden wow animate-up-down"
+          class="absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down"
         >
-          <img src="../img/boy_img_2.png" alt="Boy Image 2" />
+          <img src="../img/boy_img_2.png" alt="banner-img-2" />
           <span
-            class="absolute -left-2.5 top-[9px] border-2 border-[#1CBBB4] rounded-full max-h-[369px] w-full h-full"
+            class="absolute -left-2.5 top-[9px] border-2 border-[#F26522] rounded-[125px] max-h-[369px] w-full h-full"
           ></span>
         </div>
 
-        <!-- Background Image -->
         <div class="lg:pt-[72px]">
-          <img src="../img/painting.png" alt="Painting" />
+          <img src="../img/painting.png" alt="painting" />
         </div>
+      </div>
 
-        <!-- Decorative Elements for Large Screens -->
-        <div class="lg:block hidden">
-          <div class="absolute left-0 top-[60px] wow animate-left-right-2">
-            <img src="../img/left-circle-1.png" alt="Left Circle 1" />
-          </div>
-          <div
-            class="absolute left-[37px] top-[186px] wow animate-left-right-2"
-          >
-            <img src="../img/left-circle-2.png" alt="Left Circle 2" />
-          </div>
-          <div class="absolute right-0 bottom-[165px] wow animate-up-down">
-            <img src="../img/right-circle.png" alt="Right Circle" />
-          </div>
+      <!-- Decorative Elements for Large Screens -->
+      <div class="lg:block hidden">
+        <div class="absolute left-0 top-[60px] animate-left-right-2">
+          <img
+            src="../img/left-circle-1.png"
+            alt="Left Circle 1"
+            class="max-w-[50px]"
+          />
+        </div>
+        <div class="absolute left-[37px] top-[186px] animate-left-right-2">
+          <img
+            src="../img/left-circle-2.png"
+            alt="Left Circle 2"
+            class="max-w-[40px]"
+          />
+        </div>
+        <div class="absolute right-0 bottom-[165px] animate-up-down">
+          <img
+            src="../img/right-circle.png"
+            alt="Right Circle"
+            class="max-w-[60px]"
+          />
         </div>
       </div>
     </section>
 
-    <!-- 
-    Feature Stats -->
+    <!-- Feature Stats Section -->
     <section class="lg:pt-15 pt-10 lg:pb-15 pb-10">
       <div
         class="container mx-auto flex xl:flex-row flex-col max-w-[1288px] lg:px-3 px-10"
@@ -509,7 +561,7 @@
       </div>
     </section>
 
-    <!-- About us -->
+    <!-- About Us Section -->
     <section class="lg:pt-15 pt-10 lg:pb-15 pb-10">
       <div
         class="container mx-auto max-w-[1288px] flex xl:flex-row flex-col items-center gap-10"
@@ -587,7 +639,7 @@
       </div>
     </section>
 
-    <!-- education -->
+    <!-- Education Section -->
     <section class="lg:pt-15 pt-10 lg:pb-15 pb-10 relative z-10">
       <div
         class="absolute lg:top-10 top-[70px] right-5 z-0 md:inline-block hidden animate-left-right"
@@ -740,7 +792,7 @@
       </div>
     </section>
 
-    <!-- Portforlio -->
+    <!-- Portforlio Section -->
     <section class="lg:pt-15 lg:pb-15 pt-10 pb-10 portfolio">
       <div class="container mx-auto max-w-[1288px]">
         <div class="text-center flex flex-col items-center">
@@ -759,70 +811,435 @@
           </p>
         </div>
 
-        <div class="flex flex-wrap space-x-8 justify-center pt-8">
-          <button
-            class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none transition border rounded-lg hover:bg-[#F7941E] duration-500 bg-[#F7941E] text-white"
-            data-tab="tab-1"
-          >
-            Education
-          </button>
-          <button
-            class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none border rounded-lg hover:bg-[#F7941E] transition"
-            data-tab="tab-2"
-          >
-            School
-          </button>
-          <button
-            class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none border rounded-lg hover:bg-[#F7941E] transition"
-            data-tab="tab-3"
-          >
-            Learn
-          </button>
-          <button
-            class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none border rounded-lg hover:bg-[#F7941E] transition"
-            data-tab="tab-4"
-          >
-            Child</button
-          ><button
-            class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none border rounded-lg hover:bg-[#F7941E] transition"
-            data-tab="tab-5"
-          >
-            Coaching
-          </button>
-        </div>
+        <div>
+          <div class="flex flex-wrap space-x-8 justify-center pt-8">
+            <button
+              class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none transition border rounded-lg hover:bg-[#F7941E] duration-500 bg-[#F7941E] text-white"
+              data-tab="tab-1"
+            >
+              Education
+            </button>
+            <button
+              class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none border rounded-lg hover:bg-[#F7941E] transition"
+              data-tab="tab-2"
+            >
+              School
+            </button>
+            <button
+              class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none border rounded-lg hover:bg-[#F7941E] transition"
+              data-tab="tab-3"
+            >
+              Learn
+            </button>
+            <button
+              class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none border rounded-lg hover:bg-[#F7941E] transition"
+              data-tab="tab-4"
+            >
+              Child</button
+            ><button
+              class="text-xl from-neutral-700 tab-button py-2 px-4 hover:text-[#fff] focus:outline-none border rounded-lg hover:bg-[#F7941E] transition"
+              data-tab="tab-5"
+            >
+              Coaching
+            </button>
+          </div>
 
-        <!-- Tab Contents -->
-        <div class="tab-content mt-16" id="tab-1 ">
+          <!-- Tab Contents -->
           <div
-            class="flex gap-7 wow fade-in-up animate-fade-in-up"
+            class="mt-[64px] overflow-hidden relative wow fade-in-up animate-fade-in-up"
             data-wow-delay=".3s"
           >
+            <div class="tab-content mt-16" id="tab-1 animate-fade-in-up ">
+              <div class="flex gap-7" data-wow-delay=".3s">
+                <div
+                  class="relative group animate-fade-in-up"
+                  data-wow-delay=".3s"
+                >
+                  <img src="../img/portfolio-1.png" alt="" />
+                  <div
+                    class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                  >
+                    <div
+                      class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                    >
+                      <div
+                        class="h-full flex justify-center items-center flex-col relative"
+                      >
+                        <p class="text-[#fff] text-2xl font-medium">
+                          Exploring Minds <br />
+                          Elementary Best School
+                        </p>
+                        <p class="text-[#fff]">Dreamland Elementary</p>
+                        <div class="w-full h-full absolute">
+                          <div
+                            class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                          >
+                            <i
+                              class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-7 animate-fade-in-up"
+                  data-wow-delay=".3s"
+                >
+                  <div class="flex gap-7">
+                    <div class="relative group">
+                      <img src="../img/portfolio-2.png" alt="" />
+                      <div
+                        class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                      >
+                        <div
+                          class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                        >
+                          <div
+                            class="h-full flex justify-center items-center flex-col relative"
+                          >
+                            <p class="text-[#fff] text-2xl font-medium">
+                              Exploring Minds <br />
+                              Elementary Best School
+                            </p>
+                            <p class="text-[#fff]">Dreamland Elementary</p>
+                            <div class="w-full h-full absolute">
+                              <div
+                                class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                              >
+                                <i
+                                  class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative group">
+                      <img src="../img/portfolio-3.png" alt="" />
+                      <div
+                        class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                      >
+                        <div
+                          class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                        >
+                          <div
+                            class="h-full flex justify-center items-center flex-col relative"
+                          >
+                            <p class="text-[#fff] text-2xl font-medium">
+                              Exploring Minds <br />
+                              Elementary Best School
+                            </p>
+                            <p class="text-[#fff]">Dreamland Elementary</p>
+                            <div class="w-full h-full absolute">
+                              <div
+                                class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                              >
+                                <i
+                                  class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-7">
+                    <div class="relative group">
+                      <img src="../img/portfolio-5.png" alt="" />
+                      <div
+                        class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                      >
+                        <div
+                          class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                        >
+                          <div
+                            class="h-full flex justify-center items-center flex-col relative"
+                          >
+                            <p class="text-[#fff] text-2xl font-medium">
+                              Exploring Minds <br />
+                              Elementary Best School
+                            </p>
+                            <p class="text-[#fff]">Dreamland Elementary</p>
+                            <div class="w-full h-full absolute">
+                              <div
+                                class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                              >
+                                <i
+                                  class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative group">
+                      <img src="../img/portfolio-6.png" alt="" />
+                      <div
+                        class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                      >
+                        <div
+                          class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                        >
+                          <div
+                            class="h-full flex justify-center items-center flex-col relative"
+                          >
+                            <p class="text-[#fff] text-2xl font-medium">
+                              Exploring Minds <br />
+                              Elementary Best School
+                            </p>
+                            <p class="text-[#fff]">Dreamland Elementary</p>
+                            <div class="w-full h-full absolute">
+                              <div
+                                class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                              >
+                                <i
+                                  class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div
-              class="relative group wow fade-in-up animate-fade-in-up"
+              class="tab-content mt-16"
+              id="tab-2 animate-fade-in-up"
               data-wow-delay=".3s"
             >
-              <img src="../img/portfolio-1.png" alt="" />
               <div
-                class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                class="grid grid-cols-12 gap-7 animate-fade-in-up"
+                data-wow-delay=".3s"
               >
-                <div
-                  class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                >
-                  <div
-                    class="h-full flex justify-center items-center flex-col relative"
-                  >
-                    <p class="text-[#fff] text-2xl font-medium">
-                      Exploring Minds <br />
-                      Elementary Best School
-                    </p>
-                    <p class="text-[#fff]">Dreamland Elementary</p>
-                    <div class="w-full h-full absolute">
+                <div class="col-span-7">
+                  <div class="relative group">
+                    <img
+                      src="../img/portfolio-1.png"
+                      alt=""
+                      class="w-full object-cover max-h-[453px] rounded-lg"
+                    />
+                    <div
+                      class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    >
                       <div
-                        class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                        class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
                       >
-                        <i
-                          class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                        ></i>
+                        <div
+                          class="h-full flex justify-center items-center flex-col relative"
+                        >
+                          <p class="text-[#fff] text-2xl font-medium">
+                            Exploring Minds <br />
+                            Elementary Best School
+                          </p>
+                          <p class="text-[#fff]">Dreamland Elementary</p>
+                          <div class="w-full h-full absolute">
+                            <div
+                              class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-5">
+                  <div class="relative h-full group">
+                    <img
+                      src="../img/portfolio-2.png"
+                      alt=""
+                      class="w-full object-cover max-h-[453px] h-full rounded-lg"
+                    />
+                    <div
+                      class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    >
+                      <div
+                        class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center flex-col relative"
+                        >
+                          <p class="text-[#fff] text-2xl font-medium">
+                            Exploring Minds <br />
+                            Elementary Best School
+                          </p>
+                          <p class="text-[#fff]">Dreamland Elementary</p>
+                          <div class="w-full h-full absolute">
+                            <div
+                              class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-12 gap-7 mt-7 animate-fade-in-up">
+                <div class="col-span-6">
+                  <div class="relative group">
+                    <img
+                      src="../img/portfolio-3.png"
+                      alt=""
+                      class="w-full object-cover max-h-[453px] rounded-lg"
+                    />
+                    <div
+                      class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    >
+                      <div
+                        class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center flex-col relative"
+                        >
+                          <p class="text-[#fff] text-2xl font-medium">
+                            Exploring Minds <br />
+                            Elementary Best School
+                          </p>
+                          <p class="text-[#fff]">Dreamland Elementary</p>
+                          <div class="w-full h-full absolute">
+                            <div
+                              class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-6">
+                  <div class="relative h-full group">
+                    <img
+                      src="../img/portfolio-5.png"
+                      alt=""
+                      class="w-full object-cover max-h-[453px] h-full rounded-lg"
+                    />
+                    <div
+                      class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    >
+                      <div
+                        class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center flex-col relative"
+                        >
+                          <p class="text-[#fff] text-2xl font-medium">
+                            Exploring Minds <br />
+                            Elementary Best School
+                          </p>
+                          <p class="text-[#fff]">Dreamland Elementary</p>
+                          <div class="w-full h-full absolute">
+                            <div
+                              class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-content mt-16"
+              id="tab-3 animate-fade-in-up"
+              data-wow-delay=".3s"
+            >
+              <div
+                class="grid grid-cols-12 gap-7 mt-7 animate-fade-in-up"
+                data-wow-delay=".3s"
+              >
+                <div class="col-span-6">
+                  <div class="relative group">
+                    <img
+                      src="../img/portfolio-3.png"
+                      alt=""
+                      class="w-full object-cover max-h-[453px] rounded-lg"
+                    />
+                    <div
+                      class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    >
+                      <div
+                        class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center flex-col relative"
+                        >
+                          <p class="text-[#fff] text-2xl font-medium">
+                            Exploring Minds <br />
+                            Elementary Best School
+                          </p>
+                          <p class="text-[#fff]">Dreamland Elementary</p>
+                          <div class="w-full h-full absolute">
+                            <div
+                              class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-6">
+                  <div class="relative h-full group">
+                    <img
+                      src="../img/portfolio-5.png"
+                      alt=""
+                      class="w-full object-cover max-h-[453px] h-full rounded-lg"
+                    />
+                    <div
+                      class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    >
+                      <div
+                        class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center flex-col relative"
+                        >
+                          <p class="text-[#fff] text-2xl font-medium">
+                            Exploring Minds <br />
+                            Elementary Best School
+                          </p>
+                          <p class="text-[#fff]">Dreamland Elementary</p>
+                          <div class="w-full h-full absolute">
+                            <div
+                              class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -830,491 +1247,94 @@
               </div>
             </div>
             <div
-              class="flex flex-col gap-7 wow fade-in-up animate-fade-in-up"
+              class="tab-content mt-16"
+              id="tab-4 animate-fade-in-up"
               data-wow-delay=".3s"
             >
-              <div class="flex gap-7">
-                <div class="relative group">
-                  <img src="../img/portfolio-2.png" alt="" />
-                  <div
-                    class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  >
-                    <div
-                      class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                    >
-                      <div
-                        class="h-full flex justify-center items-center flex-col relative"
-                      >
-                        <p class="text-[#fff] text-2xl font-medium">
-                          Exploring Minds <br />
-                          Elementary Best School
-                        </p>
-                        <p class="text-[#fff]">Dreamland Elementary</p>
-                        <div class="w-full h-full absolute">
-                          <div
-                            class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                          >
-                            <i
-                              class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                            ></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="relative group">
-                  <img src="../img/portfolio-3.png" alt="" />
-                  <div
-                    class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  >
-                    <div
-                      class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                    >
-                      <div
-                        class="h-full flex justify-center items-center flex-col relative"
-                      >
-                        <p class="text-[#fff] text-2xl font-medium">
-                          Exploring Minds <br />
-                          Elementary Best School
-                        </p>
-                        <p class="text-[#fff]">Dreamland Elementary</p>
-                        <div class="w-full h-full absolute">
-                          <div
-                            class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                          >
-                            <i
-                              class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                            ></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-7">
-                <div class="relative group">
-                  <img src="../img/portfolio-5.png" alt="" />
-                  <div
-                    class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  >
-                    <div
-                      class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                    >
-                      <div
-                        class="h-full flex justify-center items-center flex-col relative"
-                      >
-                        <p class="text-[#fff] text-2xl font-medium">
-                          Exploring Minds <br />
-                          Elementary Best School
-                        </p>
-                        <p class="text-[#fff]">Dreamland Elementary</p>
-                        <div class="w-full h-full absolute">
-                          <div
-                            class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                          >
-                            <i
-                              class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                            ></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="relative group">
-                  <img src="../img/portfolio-6.png" alt="" />
-                  <div
-                    class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  >
-                    <div
-                      class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                    >
-                      <div
-                        class="h-full flex justify-center items-center flex-col relative"
-                      >
-                        <p class="text-[#fff] text-2xl font-medium">
-                          Exploring Minds <br />
-                          Elementary Best School
-                        </p>
-                        <p class="text-[#fff]">Dreamland Elementary</p>
-                        <div class="w-full h-full absolute">
-                          <div
-                            class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                          >
-                            <i
-                              class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                            ></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="tab-content mt-16"
-          id="tab-2 wow fade-in-up animate-fade-in-up"
-          data-wow-delay=".3s"
-        >
-          <div
-            class="grid grid-cols-12 gap-7 wow fade-in-up animate-fade-in-up"
-            data-wow-delay=".3s"
-          >
-            <div class="col-span-7">
-              <div class="relative group">
-                <img
-                  src="../img/portfolio-1.png"
-                  alt=""
-                  class="w-full object-cover max-h-[453px] rounded-lg"
-                />
-                <div
-                  class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                >
-                  <div
-                    class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                  >
-                    <div
-                      class="h-full flex justify-center items-center flex-col relative"
-                    >
-                      <p class="text-[#fff] text-2xl font-medium">
-                        Exploring Minds <br />
-                        Elementary Best School
-                      </p>
-                      <p class="text-[#fff]">Dreamland Elementary</p>
-                      <div class="w-full h-full absolute">
-                        <div
-                          class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                        >
-                          <i
-                            class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-5">
-              <div class="relative h-full group">
-                <img
-                  src="../img/portfolio-2.png"
-                  alt=""
-                  class="w-full object-cover max-h-[453px] h-full rounded-lg"
-                />
-                <div
-                  class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                >
-                  <div
-                    class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                  >
-                    <div
-                      class="h-full flex justify-center items-center flex-col relative"
-                    >
-                      <p class="text-[#fff] text-2xl font-medium">
-                        Exploring Minds <br />
-                        Elementary Best School
-                      </p>
-                      <p class="text-[#fff]">Dreamland Elementary</p>
-                      <div class="w-full h-full absolute">
-                        <div
-                          class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                        >
-                          <i
-                            class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="grid grid-cols-12 gap-7 mt-7">
-            <div class="col-span-6">
-              <div class="relative group">
-                <img
-                  src="../img/portfolio-3.png"
-                  alt=""
-                  class="w-full object-cover max-h-[453px] rounded-lg"
-                />
-                <div
-                  class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                >
-                  <div
-                    class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                  >
-                    <div
-                      class="h-full flex justify-center items-center flex-col relative"
-                    >
-                      <p class="text-[#fff] text-2xl font-medium">
-                        Exploring Minds <br />
-                        Elementary Best School
-                      </p>
-                      <p class="text-[#fff]">Dreamland Elementary</p>
-                      <div class="w-full h-full absolute">
-                        <div
-                          class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                        >
-                          <i
-                            class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-6">
-              <div class="relative h-full group">
-                <img
-                  src="../img/portfolio-5.png"
-                  alt=""
-                  class="w-full object-cover max-h-[453px] h-full rounded-lg"
-                />
-                <div
-                  class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                >
-                  <div
-                    class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                  >
-                    <div
-                      class="h-full flex justify-center items-center flex-col relative"
-                    >
-                      <p class="text-[#fff] text-2xl font-medium">
-                        Exploring Minds <br />
-                        Elementary Best School
-                      </p>
-                      <p class="text-[#fff]">Dreamland Elementary</p>
-                      <div class="w-full h-full absolute">
-                        <div
-                          class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                        >
-                          <i
-                            class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="tab-content mt-16"
-          id="tab-3 wow fade-in-up animate-fade-in-up"
-          data-wow-delay=".3s"
-        >
-          <div
-            class="grid grid-cols-12 gap-7 mt-7 wow fade-in-up animate-fade-in-up"
-            data-wow-delay=".3s"
-          >
-            <div class="col-span-6">
-              <div class="relative group">
-                <img
-                  src="../img/portfolio-3.png"
-                  alt=""
-                  class="w-full object-cover max-h-[453px] rounded-lg"
-                />
-                <div
-                  class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                >
-                  <div
-                    class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                  >
-                    <div
-                      class="h-full flex justify-center items-center flex-col relative"
-                    >
-                      <p class="text-[#fff] text-2xl font-medium">
-                        Exploring Minds <br />
-                        Elementary Best School
-                      </p>
-                      <p class="text-[#fff]">Dreamland Elementary</p>
-                      <div class="w-full h-full absolute">
-                        <div
-                          class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                        >
-                          <i
-                            class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-6">
-              <div class="relative h-full group">
-                <img
-                  src="../img/portfolio-5.png"
-                  alt=""
-                  class="w-full object-cover max-h-[453px] h-full rounded-lg"
-                />
-                <div
-                  class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                >
-                  <div
-                    class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                  >
-                    <div
-                      class="h-full flex justify-center items-center flex-col relative"
-                    >
-                      <p class="text-[#fff] text-2xl font-medium">
-                        Exploring Minds <br />
-                        Elementary Best School
-                      </p>
-                      <p class="text-[#fff]">Dreamland Elementary</p>
-                      <div class="w-full h-full absolute">
-                        <div
-                          class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                        >
-                          <i
-                            class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tab-content mt-16"
-          id="tab-4 wow fade-in-up animate-fade-in-up"
-          data-wow-delay=".3s"
-        >
-          <div
-            class="grid grid-cols-12 gap-7 wow fade-in-up animate-fade-in-up"
-            data-wow-delay=".3s"
-          >
-            <div class="col-span-7">
-              <div class="relative group">
-                <img
-                  src="../img/portfolio-1.png"
-                  alt=""
-                  class="w-full object-cover max-h-[453px] rounded-lg"
-                />
-                <div
-                  class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                >
-                  <div
-                    class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                  >
-                    <div
-                      class="h-full flex justify-center items-center flex-col relative"
-                    >
-                      <p class="text-[#fff] text-2xl font-medium">
-                        Exploring Minds <br />
-                        Elementary Best School
-                      </p>
-                      <p class="text-[#fff]">Dreamland Elementary</p>
-                      <div class="w-full h-full absolute">
-                        <div
-                          class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                        >
-                          <i
-                            class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-5">
-              <div class="relative h-full group">
-                <img
-                  src="../img/portfolio-2.png"
-                  alt=""
-                  class="w-full object-cover max-h-[453px] h-full rounded-lg"
-                />
-                <div
-                  class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                >
-                  <div
-                    class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                  >
-                    <div
-                      class="h-full flex justify-center items-center flex-col relative"
-                    >
-                      <p class="text-[#fff] text-2xl font-medium">
-                        Exploring Minds <br />
-                        Elementary Best School
-                      </p>
-                      <p class="text-[#fff]">Dreamland Elementary</p>
-                      <div class="w-full h-full absolute">
-                        <div
-                          class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
-                        >
-                          <i
-                            class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tab-content mt-16"
-          id="tab-5 wow fade-in-up animate-fade-in-up"
-          data-wow-delay=".3s"
-        >
-          <div
-            class="flex gap-7 wow fade-in-up animate-fade-in-up"
-            data-wow-delay=".3s"
-          >
-            <div class="relative group">
-              <img src="../img/portfolio-1.png" alt="" />
               <div
-                class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                class="grid grid-cols-12 gap-7 animate-fade-in-up"
+                data-wow-delay=".3s"
               >
-                <div
-                  class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                >
-                  <div
-                    class="h-full flex justify-center items-center flex-col relative"
-                  >
-                    <p class="text-[#fff] text-2xl font-medium">
-                      Exploring Minds <br />
-                      Elementary Best School
-                    </p>
-                    <p class="text-[#fff]">Dreamland Elementary</p>
-                    <div class="w-full h-full absolute">
+                <div class="col-span-7">
+                  <div class="relative group">
+                    <img
+                      src="../img/portfolio-1.png"
+                      alt=""
+                      class="w-full object-cover max-h-[453px] rounded-lg"
+                    />
+                    <div
+                      class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    >
                       <div
-                        class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                        class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
                       >
-                        <i
-                          class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                        ></i>
+                        <div
+                          class="h-full flex justify-center items-center flex-col relative"
+                        >
+                          <p class="text-[#fff] text-2xl font-medium">
+                            Exploring Minds <br />
+                            Elementary Best School
+                          </p>
+                          <p class="text-[#fff]">Dreamland Elementary</p>
+                          <div class="w-full h-full absolute">
+                            <div
+                              class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-5 animate-fade-in-up">
+                  <div class="relative h-full group">
+                    <img
+                      src="../img/portfolio-2.png"
+                      alt=""
+                      class="w-full object-cover max-h-[453px] h-full rounded-lg"
+                    />
+                    <div
+                      class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    >
+                      <div
+                        class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center flex-col relative"
+                        >
+                          <p class="text-[#fff] text-2xl font-medium">
+                            Exploring Minds <br />
+                            Elementary Best School
+                          </p>
+                          <p class="text-[#fff]">Dreamland Elementary</p>
+                          <div class="w-full h-full absolute">
+                            <div
+                              class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="flex flex-col gap-7">
-              <div class="flex gap-7">
+            <div
+              class="tab-content mt-16"
+              id="tab-5 animate-fade-in-up"
+              data-wow-delay=".3s"
+            >
+              <div class="flex gap-7 animate-fade-in-up" data-wow-delay=".3s">
                 <div class="relative group">
-                  <img src="../img/portfolio-2.png" alt="" />
+                  <img src="../img/portfolio-1.png" alt="" />
                   <div
                     class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
                   >
@@ -1342,89 +1362,122 @@
                     </div>
                   </div>
                 </div>
-                <div class="relative group">
-                  <img src="../img/portfolio-3.png" alt="" />
-                  <div
-                    class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  >
-                    <div
-                      class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                    >
+                <div class="flex flex-col gap-7">
+                  <div class="flex gap-7">
+                    <div class="relative group">
+                      <img src="../img/portfolio-2.png" alt="" />
                       <div
-                        class="h-full flex justify-center items-center flex-col relative"
+                        class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
                       >
-                        <p class="text-[#fff] text-2xl font-medium">
-                          Exploring Minds <br />
-                          Elementary Best School
-                        </p>
-                        <p class="text-[#fff]">Dreamland Elementary</p>
-                        <div class="w-full h-full absolute">
+                        <div
+                          class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                        >
                           <div
-                            class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            class="h-full flex justify-center items-center flex-col relative"
                           >
-                            <i
-                              class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                            ></i>
+                            <p class="text-[#fff] text-2xl font-medium">
+                              Exploring Minds <br />
+                              Elementary Best School
+                            </p>
+                            <p class="text-[#fff]">Dreamland Elementary</p>
+                            <div class="w-full h-full absolute">
+                              <div
+                                class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                              >
+                                <i
+                                  class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative group">
+                      <img src="../img/portfolio-3.png" alt="" />
+                      <div
+                        class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                      >
+                        <div
+                          class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                        >
+                          <div
+                            class="h-full flex justify-center items-center flex-col relative"
+                          >
+                            <p class="text-[#fff] text-2xl font-medium">
+                              Exploring Minds <br />
+                              Elementary Best School
+                            </p>
+                            <p class="text-[#fff]">Dreamland Elementary</p>
+                            <div class="w-full h-full absolute">
+                              <div
+                                class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                              >
+                                <i
+                                  class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                                ></i>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="flex gap-7">
-                <div class="relative group">
-                  <img src="../img/portfolio-5.png" alt="" />
-                  <div
-                    class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  >
-                    <div
-                      class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                    >
+                  <div class="flex gap-7">
+                    <div class="relative group">
+                      <img src="../img/portfolio-5.png" alt="" />
                       <div
-                        class="h-full flex justify-center items-center flex-col relative"
+                        class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
                       >
-                        <p class="text-[#fff] text-2xl font-medium">
-                          Exploring Minds <br />
-                          Elementary Best School
-                        </p>
-                        <p class="text-[#fff]">Dreamland Elementary</p>
-                        <div class="w-full h-full absolute">
+                        <div
+                          class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                        >
                           <div
-                            class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            class="h-full flex justify-center items-center flex-col relative"
                           >
-                            <i
-                              class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                            ></i>
+                            <p class="text-[#fff] text-2xl font-medium">
+                              Exploring Minds <br />
+                              Elementary Best School
+                            </p>
+                            <p class="text-[#fff]">Dreamland Elementary</p>
+                            <div class="w-full h-full absolute">
+                              <div
+                                class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                              >
+                                <i
+                                  class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                                ></i>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="relative group">
-                  <img src="../img/portfolio-6.png" alt="" />
-                  <div
-                    class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  >
-                    <div
-                      class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
-                    >
+                    <div class="relative group">
+                      <img src="../img/portfolio-6.png" alt="" />
                       <div
-                        class="h-full flex justify-center items-center flex-col relative"
+                        class="absolute w-full h-full p-8 top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
                       >
-                        <p class="text-[#fff] text-2xl font-medium">
-                          Exploring Minds <br />
-                          Elementary Best School
-                        </p>
-                        <p class="text-[#fff]">Dreamland Elementary</p>
-                        <div class="w-full h-full absolute">
+                        <div
+                          class="w-full h-full bg-[#F7941E] rounded-lg opacity-70 text-center"
+                        >
                           <div
-                            class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                            class="h-full flex justify-center items-center flex-col relative"
                           >
-                            <i
-                              class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
-                            ></i>
+                            <p class="text-[#fff] text-2xl font-medium">
+                              Exploring Minds <br />
+                              Elementary Best School
+                            </p>
+                            <p class="text-[#fff]">Dreamland Elementary</p>
+                            <div class="w-full h-full absolute">
+                              <div
+                                class="w-11 h-11 bg-[#fff] rounded-full -bottom-5 absolute left-[45%] cursor-pointer"
+                              >
+                                <i
+                                  class="fa-solid fa-arrow-right text-red-500 text-xl mt-2"
+                                ></i>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1438,7 +1491,7 @@
       </div>
     </section>
 
-    <!-- Service -->
+    <!-- Service Section -->
     <section
       class="pt-20 pb-15 relative lg:bg-transparent z-10 xl:px-0 lg:px-10 px-0"
     >
@@ -1669,7 +1722,7 @@
       </div>
     </section>
 
-    <!-- Faq  -->
+    <!-- Faq Section  -->
     <section class="lg:pb-15 pb-10">
       <div class="container mx-auto max-w-[1288px]">
         <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
@@ -1806,126 +1859,985 @@
       </div>
     </section>
 
-    <script src="./lib/main.js"></script>
-    <!-- swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Team section start -->
+    <section class="lg:pt-15 lg:pb-15 pt-10 pb-10">
+      <div class="container mx-auto max-w-[1288px]">
+        <div class="text-center flex flex-col items-center">
+          <p class="text-[#1CBBB4] text-[19px] wow fadeInUp font-bubblegum">
+            Meet Our Professional
+          </p>
+          <h2
+            class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[520px] wow fadeInUp font-jost"
+            data-wow-delay=".3s"
+          >
+            Joyful Journeys Childcare and the Of a Education
+          </h2>
+        </div>
+        <div class="lg:pt-15 pt-10">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
+            <!-- Card 1 start -->
+            <div
+              class="bg-main shadow-3xl border-2 border-transparent hover:border-green-500 transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team"
+            >
+              <div>
+                <div>
+                  <img
+                    src="../img/team/professonal1.png"
+                    alt="team-1"
+                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500"
+                  />
+                </div>
+                <div class="pt-7.5">
+                  <h4 class="leading-[141%]">
+                    <a href="" class="text-2xl font-medium">Jane Cooper</a>
+                  </h4>
+                  <p class="pt-1">Marketing Coordinator</p>
+                  <ul class="flex items-center gap-5 pt-7.5">
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-pinterest-p"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 end -->
+            <!-- Card 2 start -->
+            <div
+              class="bg-main shadow-3xl border-2 border-transparent hover: hover:border-green-500 transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team"
+            >
+              <div>
+                <div>
+                  <img
+                    src="../img/team/professonal2.png"
+                    alt="team-2"
+                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500"
+                  />
+                </div>
+                <div class="pt-7.5">
+                  <h4 class="leading-[141%]">
+                    <a href="" class="text-2xl font-medium">Jane Cooper</a>
+                  </h4>
+                  <p class="pt-1">Marketing Coordinator</p>
+                  <ul class="flex items-center gap-5 pt-7.5">
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-pinterest-p"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 end -->
+            <!-- Card 3 start -->
+            <div
+              class="bg-main shadow-3xl border-2 border-transparent hover:border-green-500 transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team"
+            >
+              <div>
+                <div>
+                  <img
+                    src="../img/team/professonal3 (1).png"
+                    alt="team-3"
+                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500"
+                  />
+                </div>
+                <div class="pt-7.5">
+                  <h4 class="leading-[141%]">
+                    <a href="" class="text-2xl font-medium">Jane Cooper</a>
+                  </h4>
+                  <p class="pt-1">Marketing Coordinator</p>
+                  <ul class="flex items-center gap-5 pt-7.5">
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-destructive transition-all duration-500"
+                        ><i class="fa-brands fa-pinterest-p"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Card 3 end -->
+    <!-- Team section end -->
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const tabButtons = document.querySelectorAll(".tab-button");
-        const tabContents = document.querySelectorAll(".tab-content");
+    <!-- Student age section start -->
+    <section class="lg:pt-15 lg:pb-15 pb-10 pt-10">
+      <div class="bg-[#fff0e5] lg:py-[120px] py-20 relative z-[1]">
+        <div class="container mx-auto max-w-[1288px]">
+          <div
+            class="grid lg:grid-cols-[37%_auto] grid-cols-1 items-center xl:gap-20 gap-10"
+          >
+            <!-- left side start -->
+            <div>
+              <div class="lg:max-w-[460px]">
+                <p
+                  class="text-[#1CBBB4] font-bubblegum font-bold text-[29px] wow fadeInUp"
+                >
+                  Student knowledge
+                </p>
+                <h2
+                  class="font-jost font-bold lg:text-[30px] md:text-[28px] text-2xl: lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
+                  data-wow-delay=".3s"
+                >
+                  Knowledge for All learn design Excellence for Everyone
+                </h2>
+              </div>
+              <p
+                class="text-[#686868] text-[15x] pt-5 pb-10 wow fadeInUp"
+                data-wow-delay=".4s"
+              >
+                Lorem ipsum dolor sit amet consectetur adipiscing elit platea
+                the osr of a proin mollis pretium facilisi in, ligula volutpat
+              </p>
+              <button
+                type="button"
+                class="btn-py-2 rounded-full mx-40 px-5 h-10 text-white bg-[#ed145b] hover:bg-[#fff0e5] hover:text-[#ed145b] text-[19px] wow fadeInUp"
+                data-wow-delay=".3s"
+              >
+                Learn More
+              </button>
+            </div>
+            <!-- left side end -->
+            <!-- right side start -->
+            <div
+              class="relative flex justify-center flex-wrap sm:flex-nowrap lg:justify-between md:gap-7.5 sm:gap-4 gap-3"
+            >
+              <div
+                class="mt-[110px] flex flex-col items-end md:gap-7.5 sm:gap-4 gap-3"
+              >
+                <div
+                  class="bg-[#0A6375] rounded-[10px] xl:py-20 lg:py-10 py-7 xl:px-[85px] lg:px-10 md:px-6 px-5 lg:max-w-[300px] max-w-[190px] max-h-[300px]"
+                >
+                  <h5
+                    class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[140%] text-center text-[#fff0e5] lg:max-w-[111px] md:max-w-25 max-w-20"
+                  >
+                    <span>1-2</span> <span>Years</span>
+                  </h5>
+                </div>
+                <div
+                  class="bg-[#f7941e] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]"
+                >
+                  <h5
+                    class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center text-[#fff0e5] text-[#fff0e5]lg:max-w-[111px] md:max-w-25 max-w-20"
+                  >
+                    <span>9-11</span> <span>Years</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="flex flex-col md:gap-7.5 sm:gap-4 gap-3">
+                <div
+                  class="bg-[#1cbbb4] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]"
+                >
+                  <h5
+                    class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center text-[#fff0e5] lg:max-w-[111px] md:max-w-25 max-w-20"
+                  >
+                    <span>3-5</span> <span>Years</span>
+                  </h5>
+                </div>
+                <div
+                  class="bg-[#ed145b] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]"
+                >
+                  <h5
+                    class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center text-[#fff0e5] lg:max-w-[111px] md:max-w-25 max-w-20"
+                  >
+                    <span>6-8</span> <span>Years</span>
+                  </h5>
+                </div>
+                <div
+                  class="bg-[#73BE48] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]"
+                >
+                  <h5
+                    class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center text-[#fff0e5] lg:max-w-[111px] md:max-w-25 max-w-20"
+                  >
+                    <span>16-18</span> <span>Years</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="self-center">
+                <div
+                  class="bg-[#f7941e] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]"
+                >
+                  <h5
+                    class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center text-[#fff0e5] lg:max-w-[111px] md:max-w-25 max-w-20"
+                  >
+                    <span>12-15</span> <span>Years</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <!-- right side end -->
+          </div>
 
-        // Function to set the active tab
-        function setActiveTab(index) {
-          // Remove active state from all buttons and hide all content
-          tabButtons.forEach((btn) =>
-            btn.classList.remove("bg-[#F7941E]", "text-white")
-          );
-          tabContents.forEach((content) => content.classList.add("hidden"));
+          <!-- shap -->
+          <div
+            class="absolute 2xl:left-20 left-0 bottom-20 z-[-1] xl:block hidden wow fadeInUp"
+            data-wow-delay=".3s"
+          >
+            <img src="../img/Knowledge/knowledge-lshpe.png" alt="tree" />
+          </div>
+          <div
+            class="absolute 2xl:top-[120px] lg:top-16 top-5 right-[67px] 2xl:w-auto lg:w-48 w-32 animate-left-right wow fadeInUp"
+            data-wow-delay=".3s"
+          >
+            <img src="../img/Knowledge/knowledge-animal.png" alt="animal" />
+            <!-- shap -->
+          </div>
 
-          // Set active state on the clicked button and show corresponding content
-          tabButtons[index].classList.add("bg-[#F7941E]", "text-white");
-          tabContents[index].classList.remove("hidden");
-        }
+          <section class="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial">
+            < class="container mx-auto max-w-[1288px]">
+            <div
+              class="flex lg:flex-row flex-col justify-between lg:items-center gap-4 lg:pb-15 pb-10"
+            >
+              <div class="lg:max-w-[410px]">
+                <p
+                  class="text-[#1CBBB4] font-bubblegum text-[19px] wow fadeInUp"
+                >
+                  Clients Testimonial
+                </p>
+                <h2
+                  class="font-bold font-jost lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
+                  data-wow-delay=".3s"
+                >
+                  Unlocking the Power of Wonderworks Child
+                </h2>
+              </div>
+              <p class="lg:max-w-[410px] text-[#686868]">
+                Use receiving accounts a number a currencies and get paid like a
+                local Use receivin accounts a number paid the most beautiful
+                think
+              </p>
+            </div>
+            <div
+              class="relative w-full h-full after:absolute after:left-0 after:top-0 after:lg:max-w-[calc(100%-410px)] after:md:max-w-[calc(100%-310px)] after:max-w-[calc(100%-100px)] after:w-full after:h-full after:bg-testimonial-banner after:bg-cover after:bg-no-repeat after:z-[-1]"
+            >
+              <img src="../img/User/bg-img.png" alt="bg-img" />
+            </div>
+            <div class="py-10">
+              <div
+                class="swiper testimonial-swiper max-w-[630px] w-full ml-auto mr-0"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <!-- card start -->
+                    <div class="lg:p-10 sm:p-8 py-8 sm:py-0 sm:-mr-10">
+                      <div
+                        class="bg-main border-[#F2F2F2] lg:p-15 md:p-5 p-3 max-w-[630px] w-full rounded-[10px] ml-auto shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)]"
+                      >
+                        <div
+                          class="flex justify-between items-center relative z-10 lg:pb-7.5 pb-5"
+                        >
+                          <div class="flex items-center gap-5">
+                            <img src="../img/User/user-1.png" alt="bg-img" />
+                            <div>
+                              <h5
+                                class="md:text-2xl text-xl font-semibold md:leading-[140%]"
+                              >
+                                Shakib Al Hasan
+                              </h5>
+                              <p>Marketing Manager</p>
+                            </div>
+                          </div>
+                          <div class="absolute right-0 z-[-1]">
+                            <img
+                              src="../img/User/quotation.png"
+                              alt="quotation"
+                              class="lg:w-auto w-9"
+                            />
+                          </div>
+                        </div>
+                        <p>
+                          Their product exceeded his my routi expectations. The
+                          the quality and attention to detail a the a most
+                          outstanding and it has become an essential most a
+                          education the man who can do
+                        </p>
+                        <ul class="flex items-center gap-1 lg:pt-10 pt-5">
+                          <li>
+                            <i
+                              class="fa-solid fa-star text-primary-foreground text-xl"
+                            ></i>
+                          </li>
+                          <li>
+                            <i
+                              class="fa-solid fa-star text-primary-foreground text-xl"
+                            ></i>
+                          </li>
+                          <li>
+                            <i
+                              class="fa-solid fa-star text-primary-foreground text-xl"
+                            ></i>
+                          </li>
+                          <li>
+                            <i
+                              class="fa-solid fa-star text-primary-foreground text-xl"
+                            ></i>
+                          </li>
+                          <li>
+                            <i
+                              class="fa-regular fa-star text-muted-foreground opacity-30 text-xl"
+                            ></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- card end -->
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        // Set the first tab as active on page load
-        setActiveTab(0);
+            <!-- blog section start -->
+            <section class="lg:pt-15 pt-10">
+              <div
+                class="lg:py-[120px] py-20 bg-[linear-gradient(180deg,_#FFF0E5_0%,_rgba(255,_240,_229,_0.00)_100%)]"
+              >
+                <div class="container mx-auto max-w-[1288px]">
+                  <div>
+                    <div
+                      class="flex justify-between items-center lg:pb-15 pb-10"
+                    >
+                      <div class="lg:max-w-[630px]">
+                        <p
+                          class="font-bubblegum text-[#1CBBB4] text-[19px] wow fadeInUp"
+                        >
+                          Latest Blog And News
+                        </p>
+                        <h2
+                          class="font-bold font-jost lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                          Wonderworks Child Development Center Discovery Kids
+                          Preschool
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-7.5">
+                      <div class="flex flex-col gap-7.5">
+                        <!-- card start -->
+                        <div
+                          class="bg-background rounded-[10px] p-2.5 flex sm:flex-row flex-col sm:items-center gap-5 shadow-4xl wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                          <div class="w-full sm:max-w-[210px]">
+                            <img
+                              src="../img/blog/blog-1.png"
+                              alt="blog-img-1"
+                              class="w-full h-full object-cover rounded-md"
+                            />
+                          </div>
+                          <div>
+                            <div
+                              class="lg:pb-5 md:pb-4 pb-3 flex items-center gap-5"
+                            >
+                              <p>
+                                <i
+                                  class="fa-regular fa-calendar-days text-[#1CBBB4] mr-1 inline-block"
+                                ></i
+                                ><small>October 19, 2023</small>
+                              </p>
+                              <p>
+                                <i
+                                  class="fa-regular fa-user text-[#1CBBB4] mr-1 inline-block"
+                                ></i
+                                ><small>By admin</small>
+                              </p>
+                            </div>
+                            <h3 class="lg:max-w-[370px]">
+                              <a
+                                href=""
+                                class="md:text-2xl text-xl md:leading-[141%] leading-[120%] font-semibold hover:text-[#1CBBB4] transition-all duration-500"
+                                >Empowering Children Through Education the a
+                                Igniting</a
+                              >
+                            </h3>
+                            <a
+                              href=""
+                              class="inline-flex items-center gap-2.5 lg:mt-6 mt-4 group/btn"
+                            >
+                              <span
+                                class="group-hover/btn:text-[#1CBBB4] transition-all duration-500"
+                                >Read More</span
+                              >
+                              <span
+                                class="group-hover/btn:ml-1 group-hover/btn:text-[#1CBBB4] transition-all duration-500"
+                              >
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></span>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div
+                          class="bg-background rounded-[10px] p-2.5 flex sm:flex-row flex-col sm:items-center gap-5 shadow-4xl wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                          <div class="w-full sm:max-w-[210px]">
+                            <img
+                              src="../img/blog/blog-2.png"
+                              alt="img"
+                              class="w-full h-full object-cover rounded-md"
+                            />
+                          </div>
+                          <div>
+                            <div
+                              class="lg:pb-5 md:pb-4 pb-3 flex items-center gap-5"
+                            >
+                              <p>
+                                <i
+                                  class="fa-regular fa-calendar-days text-[#1CBBB4] mr-1 inline-block"
+                                ></i
+                                ><small>October 19, 2023</small>
+                              </p>
+                              <p>
+                                <i
+                                  class="fa-regular fa-user text-[#1CBBB4] mr-1 inline-block"
+                                ></i
+                                ><small>By admin</small>
+                              </p>
+                            </div>
+                            <h3 class="lg:max-w-[370px]">
+                              <a
+                                href=""
+                                class="md:text-2xl text-xl md:leading-[141%] leading-[120%] font-semibold hover:text-[#1CBBB4] transition-all duration-500"
+                                >Empowering Children Through Education the a
+                                Igniting</a
+                              >
+                            </h3>
+                            <a
+                              href=""
+                              class="inline-flex items-center gap-2.5 lg:mt-6 mt-4 group/btn"
+                            >
+                              <span
+                                class="group-hover/btn:text-[#1CBBB4] transition-all duration-500"
+                                >Read More</span
+                              >
+                              <span
+                                class="group-hover/btn:ml-1 group-hover/btn:text-[#1CBBB4] transition-all duration-500"
+                              >
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></span>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- card end -->
+                      </div>
+                      <div>
+                        <div
+                          class="bg-background rounded-[10px] flex flex-col items-start gap-5 shadow-4xl h-full wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                          <div class="w-full">
+                            <img
+                              src="../img/blog/blog-3.png"
+                              alt="blog-img-3"
+                              class="w-full"
+                            />
+                          </div>
+                          <div class="px-10 pb-10">
+                            <div
+                              class="lg:pb-5 md:pb-4 pb-3 flex items-center gap-5"
+                            >
+                              <p>
+                                <i
+                                  class="fa-regular fa-calendar-days text-[#1CBBB4] mr-1 inline-block"
+                                ></i
+                                ><small>October 19, 2023</small>
+                              </p>
+                              <p>
+                                <i
+                                  class="fa-regular fa-user text-[#1CBBB4] mr-1 inline-block"
+                                ></i
+                                ><small>By admin</small>
+                              </p>
+                            </div>
+                            <h3>
+                              <a
+                                href=""
+                                class="md:text-2xl text-xl md:leading-[141%] leading-[120%] font-semibold hover:text-[#1CBBB4] transition-all duration-500"
+                                >Empowering Children Through Education the a
+                                Igniting</a
+                              >
+                            </h3>
+                            <a
+                              href=""
+                              class="inline-flex items-center gap-2.5 lg:mt-6 mt-4 group/btn"
+                            >
+                              <span
+                                class="group-hover/btn:text-[#1CBBB4] transition-all duration-500"
+                                >Read More</span
+                              >
+                              <span
+                                class="group-hover/btn:ml-1 group-hover/btn:text-[#1CBBB4] transition-all duration-500"
+                              >
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- blog section end -->
 
-        // Add click event listeners for each tab button
-        tabButtons.forEach((button, index) => {
-          button.addEventListener("click", () => {
-            setActiveTab(index);
-          });
-        });
-      });
+            <!-- newsletter section start -->
+            <section
+              class="bg-[linear-gradient(180deg,_rgba(238,255,200,0.00)_0%,_#E9FFB6_100%)] overflow-x-hidden"
+            >
+              <div
+                class="bg-bottom bg-no-repeat bg-contain bg-newsletter-banner"
+              >
+                <div class="container mx-auto max-w-[1288px]">
+                  <div
+                    class="flex lg:flex-row flex-col lg:items-center justify-between gap-7.5"
+                  >
+                    <div
+                      class="max-w-[598px] w-full order-1 lg:order-0 animate-left-right"
+                    >
+                      <div
+                        class="bg-[url('/assets/images/shapes/egg-shap.png')] bg-no-repeat bg-bottom bg-contain"
+                      >
+                        <img
+                          src="../img/student/student.png"
+                          alt="student-img"
+                          class="mx-auto"
+                        />
+                      </div>
+                    </div>
+                    <div class="lg:max-w-[530px] order-0 lg:order-1">
+                      <p
+                        class="font-bubblegum text-[19px] text-muted-foreground wow fadeInUp"
+                      >
+                        Get Connected
+                      </p>
+                      <h2
+                        class="font-bold font-jost lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
+                        data-wow-delay=".3s"
+                      >
+                        Education That Sparks Imaginat Nurturing Curiosity
+                        Inspire
+                      </h2>
+                      <div class="relative lg:mt-10 mt-5">
+                        <input
+                          type="text"
+                          placeholder="Enter Your Email"
+                          class="rounded-[10px] border border-black pl-6 lg:py-7 py-4 max-h-20 w-full outline-none"
+                        />
+                        <button
+                          class="flex gap-2.5 items-center bg-[#F7941E] py-[18px] px-[30px] rounded-[10px] overflow-hidden group text-white absolute right-2 top-1/2 transform -translate-y-1/2"
+                        >
+                          <span class="relative z-10">Submit</span>
+                          <span
+                            class="absolute inset-0 w-full h-full bg-[#1cbbb4] transform -translate-x-full group-hover:translate-x-0 transition-all duration-700"
+                          ></span>
+                          <i
+                            class="fa-solid fa-arrow-right ml-2 relative z-10"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- newsletter section end -->
 
-      const swiper = new Swiper(".swiper", {
-        loop: true,
-        slidesPerView: 3,
-        // centeredSlides: true,
+            <footer class="pt-[70px] relative">
+              <div class="container mx-auto max-w-[1288px]">
+                <div
+                  class="grid lg:grid-cols-[370px_auto_auto] sm:grid-cols-2 grid-cols-1 justify-between gap-7.5"
+                >
+                  <!-- compnay info start -->
+                  <div class="wow fadeInUp" data-wow-delay=".3s">
+                    <a href="" class="flex items-center gap-1">
+                      <img src="../img/logo.png" alt="img" />
+                      <span class="font-bold text-3xl">Ascent</span>
+                    </a>
+                    <p class="pt-4">
+                      Yes, there are many notable ma corporate the a od
+                      businesses Informati worldwide
+                    </p>
+                    <ul class="flex items-center gap-5 pt-7.5">
+                      <li>
+                        <a
+                          href=""
+                          class="rounded-md w-9 h-9 flex items-center justify-center bg-[#FFF0E5] hover:text-[#fff] hover:bg-[#73BE48] transition-all duration-500"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="rounded-md w-9 h-9 flex items-center justify-center bg-[#FFF0E5] hover:text-[#fff] hover:bg-[#73BE48] transition-all duration-500"
+                          ><i class="fa-brands fa-x-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="rounded-md w-9 h-9 flex items-center justify-center bg-[#FFF0E5] hover:text-[#fff] hover:bg-[#73BE48] transition-all duration-500"
+                          ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="rounded-md w-9 h-9 flex items-center justify-center bg-[#FFF0E5] hover:text-[#fff] hover:bg-[#73BE48] transition-all duration-500"
+                          ><i class="fa-brands fa-pinterest-p"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- compnay info end -->
+                  <!-- pages link start -->
+                  <div class="wow fadeInUp" data-wow-delay=".5s">
+                    <h3 class="text-2xl font-semibold font-jost">Pages</h3>
+                    <ul class="flex flex-col gap-[15px] pt-5">
+                      <li>
+                        <a
+                          href=""
+                          class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-[#F7941E]"
+                          >About Us</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-[#F7941E]"
+                          >Latest Service</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-[#F7941E]"
+                          >Latest Blog And News</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-[#F7941E]"
+                          >FAQ</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-[#F7941E]"
+                          >Our Creative Team Member</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- pages link end -->
+                  <!-- contact link start -->
+                  <div class="wow fadeInUp" data-wow-delay=".5s">
+                    <h3 class="text-2xl font-semibold font-jost">Contact</h3>
+                    <ul class="flex flex-col gap-[15px] pt-5">
+                      <li>
+                        <p class="text-[#686868] flex items-center gap-4">
+                          <span
+                            class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-[#73BE48]"
+                            ><i class="fa-solid fa-location-dot"></i
+                          ></span>
+                          <span class="max-w-[168px]"
+                            >1179 KFC Road, Lisbon, Portugal</span
+                          >
+                        </p>
+                      </li>
+                      <li>
+                        <p class="text-[#686868] flex items-center gap-4">
+                          <span
+                            class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-[#73BE48]"
+                            ><i class="fa-solid fa-envelope"></i
+                          ></span>
+                          <a href="">Sakib23@gmail.com</a>
+                        </p>
+                      </li>
+                      <li>
+                        <p class="text-[#686868] flex items-center gap-4">
+                          <span
+                            class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-[#73BE48]"
+                            ><i class="fa-solid fa-phone"></i
+                          ></span>
+                          <a href="">012547892354</a>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- contact link end -->
+                </div>
+                <div class="pt-[75px] overflow-x-hidden">
+                  <div
+                    class="flex lg:flex-row flex-col justify-between lg:items-center pt-7.5 pb-8 border-t border-t-white border-opacity-20"
+                  >
+                    <p class="wow fadeInLeft" data-wow-delay=".3s">
+                      © <a href="">Yoursitename</a> 2024 | All Rights Reserved
+                    </p>
+                    <ul
+                      class="flex items-center gap-7 wow fadeInRight"
+                      data-wow-delay=".3s"
+                    >
+                      <li><a href="">Trams & Condition</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                      <li><a href="">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="scroll-up"
+                class="absolute bottom-20 xl:left-[90%] left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-[#F7941E] text-white flex items-center justify-center border-[3px] border-white cursor-pointer"
+              >
+                <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+              </div>
+            </footer>
 
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            centeredSlides: false,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-            centeredSlides: false,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-            centeredSlides: true,
-          },
-        },
-      });
-    </script>
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                const tabButtons = document.querySelectorAll(".tab-button");
+                const tabContents = document.querySelectorAll(".tab-content");
 
-    <script>
-      document.querySelectorAll(".according-item").forEach((item) => {
-        const button = item.querySelector(".according-btn");
-        const details = item.querySelector(".accordion-details");
-        const iconSpan = item.querySelector(".icon");
+                // Hàm để thiết lập tab đang hoạt động
+                function setActiveTab(index) {
+                  tabButtons.forEach((btn) =>
+                    btn.classList.remove("bg-[#F7941E]", "text-white")
+                  );
+                  tabContents.forEach((content) =>
+                    content.classList.add("hidden")
+                  );
 
-        button.addEventListener("click", () => {
-          const isOpen = item.getAttribute("data-open") === "true";
+                  tabButtons[index].classList.add("bg-[#F7941E]", "text-white");
+                  tabContents[index].classList.remove("hidden");
+                }
 
-          // Đóng tất cả accordion
-          document.querySelectorAll(".according-item").forEach((innerItem) => {
-            innerItem.setAttribute("data-open", "false");
-            const innerDetails = innerItem.querySelector(".accordion-details");
-            innerDetails.style.maxHeight = "0";
-            innerDetails.style.opacity = "0";
-            innerDetails.style.visibility = "hidden";
-            innerItem.querySelector(".icon .fa-minus").style.display = "none";
-            innerItem.querySelector(".icon .fa-plus").style.display = "block";
+                setActiveTab(0);
 
-            innerItem.querySelector(".icon").style.backgroundColor = "#F7941E";
-          });
+                tabButtons.forEach((button, index) => {
+                  button.addEventListener("click", () => {
+                    setActiveTab(index); // Gọi hàm để thiết lập tab tương ứng
+                  });
+                });
+              });
 
-          if (!isOpen) {
-            item.setAttribute("data-open", "true");
-            details.style.maxHeight = `${details.scrollHeight}px`;
-            details.style.opacity = "1";
-            details.style.visibility = "visible";
-            item.querySelector(".icon .fa-minus").style.display = "block";
-            item.querySelector(".icon .fa-plus").style.display = "none";
+              // Khởi tạo Swiper cho slider
+              const swiper = new Swiper(".swiper", {
+                loop: true,
+                slidesPerView: 3,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                breakpoints: {
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                    centeredSlides: false,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                    centeredSlides: true,
+                  },
+                },
+              });
+            </script>
 
-            // Thay đổi màu nền của thẻ span
-            iconSpan.style.backgroundColor = "#1CBBB4";
-          }
-        });
-      });
+            <script>
+              document.querySelectorAll(".according-item").forEach((item) => {
+                const button = item.querySelector(".according-btn");
+                const details = item.querySelector(".accordion-details");
+                const iconSpan = item.querySelector(".icon");
 
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".according-item").forEach((item) => {
-          const isOpen = item.getAttribute("data-open") === "true";
-          const iconPlus = item.querySelector(".icon .fa-plus");
-          const iconMinus = item.querySelector(".icon .fa-minus");
-          const iconSpan = item.querySelector(".icon");
+                button.addEventListener("click", () => {
+                  const isOpen = item.getAttribute("data-open") === "true";
 
-          if (isOpen) {
-            iconMinus.style.display = "block";
-            iconPlus.style.display = "none";
-            iconSpan.style.backgroundColor = "#1CBBB4";
-          } else {
-            iconMinus.style.display = "none";
-            iconPlus.style.display = "block";
-            iconSpan.style.backgroundColor = "#F7941E";
-          }
-        });
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+                  document
+                    .querySelectorAll(".according-item")
+                    .forEach((innerItem) => {
+                      innerItem.setAttribute("data-open", "false");
+                      const innerDetails =
+                        innerItem.querySelector(".accordion-details");
+                      innerDetails.style.maxHeight = "0";
+                      innerDetails.style.opacity = "0";
+                      innerDetails.style.visibility = "hidden";
+                      innerItem.querySelector(".icon .fa-minus").style.display =
+                        "none";
+                      innerItem.querySelector(".icon .fa-plus").style.display =
+                        "block";
+                      innerItem.querySelector(".icon").style.backgroundColor =
+                        "#F7941E";
+                    });
+
+                  if (!isOpen) {
+                    item.setAttribute("data-open", "true");
+                    details.style.maxHeight = `${details.scrollHeight}px`;
+                    details.style.opacity = "1";
+                    details.style.visibility = "visible";
+                    item.querySelector(".icon .fa-minus").style.display =
+                      "block";
+                    item.querySelector(".icon .fa-plus").style.display = "none";
+                    iconSpan.style.backgroundColor = "#1CBBB4";
+                  }
+                });
+              });
+
+              // Khi tài liệu được tải xong, kiểm tra trạng thái của từng accordion
+              document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll(".according-item").forEach((item) => {
+                  const isOpen = item.getAttribute("data-open") === "true";
+                  const iconPlus = item.querySelector(".icon .fa-plus");
+                  const iconMinus = item.querySelector(".icon .fa-minus");
+                  const iconSpan = item.querySelector(".icon");
+
+                  // Hiện hoặc ẩn biểu tượng dựa trên trạng thái
+                  if (isOpen) {
+                    iconMinus.style.display = "block";
+                    iconPlus.style.display = "none";
+                    iconSpan.style.backgroundColor = "#1CBBB4"; // Đặt màu nền cho biểu tượng mở
+                  } else {
+                    iconMinus.style.display = "none";
+                    iconPlus.style.display = "block";
+                    iconSpan.style.backgroundColor = "#F7941E"; // Đặt màu nền cho biểu tượng đóng
+                  }
+                });
+              });
+            </script>
+
+            <!-- BacktoTop -->
+            <script>
+              // Thêm sự kiện click cho nút cuộn lên trên
+              document
+                .getElementById("scroll-up")
+                .addEventListener("click", function () {
+                  window.scrollTo({ top: 0, behavior: "smooth" }); // Cuộn mượt lên đầu trang
+                });
+
+              // Thêm sự kiện cuộn cho cửa sổ
+              window.addEventListener("scroll", function () {
+                const button = document.getElementById("scroll-up");
+                // Chỉ hiển thị nút khi cuộn xuống hơn 100px
+                if (
+                  document.body.scrollTop > 100 ||
+                  document.documentElement.scrollTop > 100
+                ) {
+                  button.style.display = "flex"; // Hiện nút
+                } else {
+                  button.style.display = "none"; // Ẩn nút khi cuộn lên
+                }
+              });
+            </script>
+
+            <!-- Nút cuộn lên -->
+            <div
+              id="scroll-up"
+              class="absolute bottom-20 xl:left-[90%] left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-[#F7941E] text-white flex items-center justify-center border-[3px] border-white cursor-pointer"
+              style="display: none"
+            >
+              <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+            </div>
+
+            <!-- Thư viện swiper -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+            <script src="assets/js/animate.js"></script>
+
+            <!-- Thư viện WOW.js cho hiệu ứng cuộn -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+            <script>
+              // Khởi tạo WOW.js
+              new WOW().init();
+            </script>
+
+            <!-- Thư viện script chính -->
+            <script src="./lib/main.js"></script>
+          </section>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

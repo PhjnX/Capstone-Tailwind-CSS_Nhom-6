@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backdropBlur: {
+        main: "#fff",
+        warm: "fff0e5",
+      },
       fontFamily: {
         jost: ["Jost", "sans-serif"],
         nunito: ["Nunito", "sans-serif"],
@@ -47,7 +51,7 @@ module.exports = {
   plugins: [],
   variants: {
     extend: {
-      translate: ["group-two-hover"],
+      translate: ["group-two-hover"], 
     },
   },
 };
