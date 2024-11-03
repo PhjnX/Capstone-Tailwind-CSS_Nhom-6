@@ -1493,11 +1493,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
 .bg-\[linear-gradient\(180deg\2c _\#FFF0E5_0\%\2c _rgba\(255\2c _240\2c _229\2c _0\.00\)_100\%\)\] {
   background-image: linear-gradient(180deg, #FFF0E5 0%, rgba(255, 240, 229, 0.00) 100%);
 }
